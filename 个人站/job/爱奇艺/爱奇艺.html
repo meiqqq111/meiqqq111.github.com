@@ -1,0 +1,925 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../css/base.css" rel="stylesheet"  />
+<style>
+	.box{ width:1000px; margin:0 auto; position:relative; }
+	.search{ width:245px; height:28px; border:1px solid #c0c0c0; margin-top:10px; margin-left:130px; background:url(../img/1.png) no-repeat 210px 0; position:absolute; left:140px; top:0;}
+	.search1{ font-size:12px; color:#fff; margin-left:9px; line-height:28px;}
+	.box li{ float:right;  position:absolute; left:921px; top:20px;  }
+	.clearfix:after{ display:block; content:''; clear:both;}
+	.clearfix{ zoom:1;}
+	.box .li2{position:absolute; left:871px; top:20px;  }
+	.box .li3{position:absolute; left:832px; top:20px;  }
+	.box .li4{position:absolute; left:780px; top:20px;}
+	.box .li5{position:absolute; left:705px; top:20px;  }
+	.box .li6{position:absolute; left:666px; top:20px;  }
+	.box .li7{position:absolute; left:624px; top:20px;  }
+	.box a{ font-size:13px; color:#dedede;}
+	.fonter{ width:218px; height:347px; background:url(../img/site-focuslist_bg.png) no-repeat; position:absolute; left:769px; top:50px;}
+	.fonter a{ font-size:13px; line-height:55px;}
+	.fonter .li17{ left:30px; }
+	.fonter .li8{ left:30px;top:47px;}
+	.fonter .li9{ left:30px; top:81px;}
+	.fonter .li10{ left:30px; top:114px;}
+	.fonter .li11{ left:30px; top:148px;}
+	.fonter .li12{ left:30px; top:181px;}
+	.fonter .li13{ left:30px; top:215px;}
+	.fonter .li14{ left:30px; top:215px;}
+	.fonter .li15{ left:30px; top:255px;}
+	.fonter .li16{ left:30px; top:290px;}
+	.tit{ width:1000px;   background:#000; margin:0 auto; position:relative; left:0px; top:-10px; padding-top:10px; padding-bottom:10px;  }
+	.tit1{ width:980px; height:88px;  border:1px solid #75b200; margin-left:10px; margin-top:10px;}
+	h1{ width:125px; height:80px; background:url(../img/3.png) no-repeat 18px 18px; text-indent:-999em; }
+	.tit .yule a{ font-size:12px; color:#ccc; }
+	.tit1 .yule{margin-left:160px; margin-top:-70px; line-height:25px; }
+	.tit1 .tit3{margin-left:0px}
+	.tit1 .tit4 a{margin-left:0px;}
+	 .yule2{ margin-left:216px; margin-top:-75px; line-height:25px;}
+	 .yule2 a{ font-size:12px; color:#ccc; }
+	 .yule3{ margin-left:265px; margin-top:-75px; line-height:25px;}
+	 .yule3 a{ font-size:12px; color:#ccc; }
+	  .yule4{ margin-left:331px; margin-top:-75px; line-height:25px;}
+	 .yule4 a{ font-size:12px; color:#ccc; }
+	 .yule5{ margin-left:370px; margin-top:-75px; line-height:25px;}
+	 .yule5 a{ font-size:12px; color:#ccc; }
+	 .yule6{ margin-left:428px; margin-top:-75px; line-height:25px;}
+	 .yule6 a{ font-size:12px; color:#ccc; }
+	 .yule7{ margin-left:467px; margin-top:-75px; line-height:25px;}
+	 .yule7 a{ font-size:12px; color:#ccc; }
+	 .yule8{ margin-left:525px; margin-top:-75px; line-height:25px;}
+	 .yule8 a{ font-size:12px; color:#ccc; }
+	 .yule9{ margin-left:575px; margin-top:-75px; line-height:25px;}
+	 .yule9 a{ font-size:12px; color:#ccc; }
+	 .yule10{ margin-left:639px; margin-top:-75px; line-height:25px;}
+	 .yule10 a{ font-size:12px; color:#ccc; }
+	 .yule11{ margin-left:723px; margin-top:-75px; line-height:25px;}
+	 .yule11 a{ font-size:12px; color:#ccc; }
+	 .yule12{ margin-left:824px; margin-top:-75px; line-height:25px;}
+	 .yule12 a{ font-size:12px; color:#ccc; }
+	 .yule13{ margin-left:906px; margin-top:-75px; line-height:25px;}
+	 .yule13 a{ font-size:12px; color:#ccc; }
+	 .box2{ width:1007px; margin:0 auto; margin-top:33px; }
+	 .box2-1{ width:382px; float:left;}
+	 h2{ font-size:23px; color:#699f00; font-weight:bold; border-bottom:2px solid #85ba4d; padding-bottom:10px;  }
+	 .box2-2{ float:right;font-size:14px; color:#2e2e2e; background:url(../img/4.png) no-repeat; padding-left:20px; padding-top:7px;border:1px solid #e6e6e6; padding:7px 7px 4px 15px;}
+	 .box2-1 ul{ padding-top:22px; margin-left:20px; line-height:36px;}
+	 .box2-1 li a{ font-size:16px; color:#333;}
+	 .box2-3 .l1{ margin-left:-40px;}
+	 .box2-3 li{ float:left; margin-right:20px;}
+	 .box2-3 p{ font-size:13px; color:#333333; background:#f2f2f2;}
+	 .box3{ float:left; margin-left:20px; width:380px; }
+	 .box3 ul{ margin-top:24px; margin-left:18px;}
+	 .box3 li{ line-height:35px; }
+	 .box3 li a{ font-size:16px; color:#333;}
+	 .box4{ float:left; margin-left:20px;}
+	 .box4 li{background:#dfdfdf; margin-bottom:20px;}
+	 .box4 p{ margin-top:10px; margin-left:8px; padding-bottom:20px; }
+	 .box4 p a{ font-size:13px; color:#333;}
+	 .con{ width:1007px; margin:0 auto; margin-bottom:25px;}
+	 .con1{ width:781px; padding-top:55px; border-bottom:2px solid #8ac024;}
+	 
+	 .con1 li,h3{ float:left; margin-top:55px; margin-bottom:}
+	 .con1 h3 a{ font-size:27px; color:#699f00; margin-right:35px; }
+	 .con1 a{ font-size:13px; color:#333; margin-right:30px;}
+	 .a1{ margin-left:165px;width:103px; height:30px; background:url(../img/11.png) no-repeat;}
+	 .con2{ margin-top:25px; margin-left:6px; }
+	 .con2 li{ float:left; margin-right:20px; background:#f2f2f2;}
+	 .con2-1{ font-size:14px; color:#333; margin-top:11px; }
+	 .con2-2{ font-size:11px; color:#999;line-height:22px;}
+	 .con22{ margin-right:20px;}
+	 .con2 .con23{ float:left;}
+	 .con2-4{ float:left; margin-top:-150px; background:#f2f2f2; }
+	 .con2-4 .con2-5{ margin-top:12px; font-size:14px; color:#333;padding-bottom:13px; border-bottom:1px dashed #ccc;}
+	 .con2-4 p{ font-size:14px; margin-top:14px; margin-left:10px; line-height:20px;}
+	 .con3{ width:1007px; margin:0 auto; margin-bottom:23px;}
+	 .con3 li{ float:left; margin-top:15px; margin-right:21px; width:180px; background:#f2f2f2;}
+	 .con3 p{ font-size:13px; color:#333; margin-top:11px; margin-left:5px;}
+	 .con3 p span{ font-size: 11px; color:#699f00; border:1px solid #cfcfcf; padding:5px 3px 3px 4px; background:#fff; line-height:21px; }
+	 .con4{ width:1007px; margin:0 auto; }
+	 .con4 li{ float:left; margin-top:15px; margin-right:21px; width:180px; background:#f2f2f2;}
+	 .con4 p{ font-size:13px; color:#333; margin-top:11px; margin-left:5px; line-height:10px;}
+	 .con4 p span{ font-size: 11px; color:#699f00; border:1px solid #cfcfcf; padding:5px 3px 3px 4px; background:#fff; }
+	 .con5{ width:1007px; margin:0 auto; margin-top:50px; }
+	  .con6{ width:1007px;  border-bottom:2px solid #8ac024; }
+	 
+	 .con6 li,h3{ float:left; margin-top:55px; margin-bottom:}
+	 .con6 h3 a{ font-size:27px; color:#699f00; margin-right:35px; }
+	 .con6 a{ font-size:13px; color:#333; margin-right:30px;}
+	 .a2{ margin-left:375px;width:103px; height:30px; background:url(../img/11.png) no-repeat;}
+	 .con7 li{ float:left; margin-top:25px; margin-right:19px; }
+	 
+	 .list{ width:1007px; margin:0 auto; margin-top:50px; }
+	 .list h4{ font-size:11px; color:#fff; background:#8ac024; width:84px; height:23px; text-align:center; line-height:23px; border-radius:3px 3px;  }
+	 .list-1{border:2px solid #8ac024; }
+	 .list-1 .list-2{ width:17px; height:27px; background:url(../img/37.png) no-repeat; margin:67px 7px 67px 4px; }
+	 .list-1 li{ float:left; margin-top:12px; margin-right:20px;}
+	 .list-1 .list-3{ width:17px; height:27px; background:url(../img/a6.png) no-repeat; margin-right:-20px; margin-top:67px; }
+	 .list2{ width:1007px; margin:0 auto; margin-top:48px; position:relative;}
+	 .list2-1{ width:780px; position:relative; }
+	 .list2 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:780px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 h5{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; }
+	 h5 span{ margin-right:34px;}
+	 h5 em{ font-size:12px; color:#333; margin-right:31px;}
+	 .list2-1 li{ margin-top:25px; float:left; margin-right:20px; margin-bottom:14px; background:#f2f2f2; }
+	 .list2-1 ul{ margin-right:-20px;}
+	 .list2-1 .p1{ font-size:11px; color:#333; padding-top:12px; margin-left:5px;}
+	 .list2-1 .p2{ font-size:11px; color:#999; line-height:16px;margin-left:5px; padding-bottom:10px;}
+	 .list3{  position:absolute; left:800px; top:0; width:200px;}
+	 .list3 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:180px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 .list3 li{ float:left;}
+	 
+	 .list3 .img1{ margin-bottom:20px;} 
+	 .list3 ul{ background:#f1f1f1;}
+	  .list4{ width:1007px; margin:0 auto; margin-top:48px; position:relative;}
+	 .list4-1{ width:580px; position:relative; }
+	 .list4 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:580px;border-bottom:1px solid #e1e1e1; padding-bottom:10px;}
+	 h5{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; margin-bottom:15px;  }
+	 h5 span{ margin-right:34px;}
+	 h5 em{ font-size:12px; color:#333; margin-right:31px;}
+	  h6{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; position:absolute; left:600px; top:-6px;; width:380px;border-bottom:1px solid #e1e1e1; padding-bottom:10px; margin-bottom:15px;  }
+	 h6 span{ margin-right:34px;}
+	 h6 em{ font-size:12px; color:#333; margin-right:31px;}
+	 .list4 li{ float:left; margin-right:21px; background:#f2f2f2;}
+	 .list4 li p{ padding:11px 0 11px 6px; font-size:14px; color:#333;}
+	  .list5{ width:1007px; margin:0 auto; margin-top:48px; position:relative;}
+	 .list5-1{ width:780px; position:relative; }
+	 .list5 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:780px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 h7{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; position:absolute; left:830px; top:-6px; width:180px;border-bottom:2px solid #8ac024; padding-bottom:10px;  background:url(../img/a7.png) no-repeat; position:absolute; left:780px; top:-6px;}
+	 h7 span{ margin-right:34px;}
+	 .list5 li{ float:left; margin-right:20px; background:#f2f2f2; margin-bottom:15px;}
+	 .list5 li p{ font-size:14px; color:#333; padding:10px 0 12px 6px;}
+	 
+	  h8{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; position:absolute; left:680px; top:-6px; width:180px;border-bottom:2px solid #8ac024; padding-bottom:10px;  background:url(../img/a7.png) no-repeat; position:absolute; left:580px; top:-6px;}
+	 h8 span{ margin-right:34px;}
+	 .list4{ width:1007px; margin:0 auto; margin-top:40px;}
+	 .list4 .name li{ margin-bottom:15px; }
+	 .last{ width:1007px; margin:0 auto; margin-top:40px; position:relative;}
+	 .last .last-1{ width:1007px; position:relative; }
+	 .last i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:1007px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 h5{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; margin-bottom:15px;  }
+	 h5 span{ margin-right:34px;}
+	 h5 em{ font-size:12px; color:#333; margin-right:31px;}
+	 .last .last-2{ width:380px; float:left;}
+	 .last-2 ul{ margin-right:-20px;}
+	 .last-2 li{ float:left; margin-right:20px; background:#f2f2f2; margin-bottom:15px; margin-top:20px;}
+	 .last-2 li p{ font-size:12px; color:#333; padding:11px 0 13px 6px;}
+	 .last-3{ float:left; width:380px; margin-left:20px;}
+	 .last-3 ul{ margin-right:-20px;}
+	 .last-3 li{ float:left; margin-right:20px;background:#f2f2f2;margin-bottom:15px; margin-top:20px;}
+	  .last-3 li p{font-size:12px; color:#333; padding:11px 0 13px 6px;  }
+	 .last-4{ position:absolute; right:20px; top:67px;background:#f2f2f2;}
+	 .last-4 p{ font-size:12px; color:#333; padding:11px 0 13px 6px;}
+	 .last2{ width:1007px; margin:0 auto; margin-top:48px; position:relative;}
+	 .last2-1{ width:1007px; position:relative; }
+	 .last2 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:1007px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 h5{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; margin-bottom:15px;  }
+	 h5 span{ margin-right:34px;}
+	 h5 em{ font-size:12px; color:#333; margin-right:31px;}
+	 .last2 li{ float:left; margin-top:20px; margin-right:20px;background:#f2f2f2;}
+	 .last2 li p{ font-size:12px; color:#333; padding:11px 0 13px 6px;}	
+	 .last3{ width:1007px; margin:0 auto; margin-top:48px; position:relative;}
+	 .last3-1{ width:1007px; position:relative; }
+	 .last3 i{ width:15px; height:25px; background:url(../img/a7.png) no-repeat; position:absolute; left:0; top:0; width:1007px;border-bottom:2px solid #699f00; padding-bottom:10px;}
+	 h5{ font-size:27px; color:#699f00; margin-left:20px; font-weight:bold; margin-bottom:15px;  }
+	 h5 span{ margin-right:34px;}
+	 h5 em{ font-size:12px; color:#333; margin-right:31px;} 
+	 .last3-2{ width:780px; margin-top:20px;}
+	 .last3-2 ul{ margin-right:-20px;}
+	 .last3-2 li{ float:left; margin-right:20px;background:#f2f2f2; margin-bottom:15px; }
+	  .last3-2 .p1{ font-size:11px; color:#333; padding-top:12px; margin-left:5px;}
+	 .last3-2 .p2{ font-size:11px; color:#999; line-height:16px;margin-left:5px; padding-bottom:10px;}
+	
+	 .last3-3 img{ position:absolute; right:20px; top:52px;}
+	 .last4{ margin-top:51px;}
+	 .last4 img{ border-top:1px solid #000;}
+	.fenbu{ margin-top:45px; text-align:left; }
+	.hezuo{ float:left; border:1px solid #e7e7e7; background:#f7f7f7; width:489px; height:182px; }
+	.hezuo h3{ font-size:22px; color:#333; margin-top:22px; margin-left:20px; }
+	.hezuo ul{ float:left; margin-left:-8px; padding-top:64px; }
+	.hezuo li a{font-size:11px; line-height:28px; margin-right:20px; }
+	.dongtai{ float:left; border:1px solid #e7e7e7; background:#f7f7f7; width:489px; height:182px; }
+	.dongtai h3{ font-size:22px; color:#333; margin-top:22px; margin-left:20px; }
+	.dongtai ul{ float:left; margin-left:-8px; padding-top:64px; }
+	.dongtai li a{font-size:11px; line-height:28px; margin-right:20px; }
+	.footer{ margin:0 auto; margin-top:50px;}
+	.footer ul{ margin-left:86px;}
+	.footer li{ float:left; border-right:1px solid #956695; padding-right:10px; margin-left:11px;}
+	.footer .p1{ margin-left:266px; margin-top:15px;}
+	.footer .p1 span{ font-size:12px; color:#666;}
+	.footer .p1 .f1{ margin-right:61px;}
+	.footer .p2{ font-size:12px; color:#666; margin-top:17px; line-height:29px;}
+	.footer .p3{ font-size:11px; color:#666; margin-top:44px; margin-left:368px;}
+</style> 
+
+<body>
+	<div class="box">
+    	<img src="../img/lh.jpg" alt="" />
+    	 <div class="search">
+        <a href="#" class="search1">大好时光</a>
+        </div>
+    	<ul class="clearfix">
+       
+        <li class="li1"><a href="#">播放记录</a></li>
+        <li class="li2"><a href="#">消息</a></li>
+        <li class="li3"><a href="#">下载</a></li>
+        <li class="li4"><a href="#">上传</a></li>
+        <li class="li5"><a href="#">开通VIP</a></li>
+        <li class="li6"><a href="#">注册</a></li>
+        <li class="li7"><a href="#">登陆</a></li>
+        </ul>
+        <div class="fonter">
+        <ul class="ul1">
+        <li class="li17"><a href="#">北上广不相信眼泪：职场迷情</a></li>
+        <li class="li8"><a href="#">跑男3：鹿晗秒速抢答惊呆全场</a></li>
+        <li class="li9"><a href="#">云中歌：陈晓杜淳心生嫌隙</a></li>
+        <li class="li10"><a href="#">灵魂摆渡2：铁三角再续前缘</a></li>
+        <li class="li11"><a href="#">时尚江湖：李小璐花式晒幸福</a></li>
+        <li class="li12"><a href="#">新济公活佛：李威变身哈蒙王子</a></li>
+        <li class="li3"><a href="#">超模变身狂野电玩Queen</a></li>
+        <li class="li14"><a href="#">BBC狗狗秘闻：最有爱宠物大片</a></li>
+        <li class="li15"><a href="#">综艺大嘴巴：李易峰新综上线</a></li>
+        <li class="li16"><a href="#">1117美图产品发布会</a></li>
+        </ul></div>
+        </div>
+        <div class="tit">
+        <div class="tit1">
+        <h1><a href="#">爱奇艺</a><b>畅享品质</b></h1>
+        <ul class="yule clearfix">
+        <li><a href="#" class="tit2">娱乐</a></li>
+         <li><a href="#" class="tit3">体育</a></li>
+          <li><a href="#" class="tit4">资讯</a></li>
+        </ul>
+        <ul class="yule2 clearfix">
+        <li><a href="#" class="tit2">电影</a></li>
+         <li><a href="#" class="tit3">片花</a></li>
+          <li><a href="#" class="tit4">微电影</a></li>
+        </ul>
+        <ul class="yule3 clearfix">
+        <li><a href="#" class="tit2">电视剧</a></li>
+         <li><a href="#" class="tit3">综艺</a></li>
+          <li><a href="#" class="tit4">脱口秀</a></li>
+        </ul>
+         <ul class="yule4 clearfix">
+        <li><a href="#" class="tit2">动漫</a></li>
+         <li><a href="#" class="tit3">少儿</a></li>
+          <li><a href="#" class="tit4">游戏</a></li>
+        </ul>
+        <ul class="yule5 clearfix">
+        <li><a href="#" class="tit2">生活</a></li>
+         <li><a href="#" class="tit3">母婴</a></li>
+          <li><a href="#" class="tit4">健康</a></li>
+        </ul>
+        <ul class="yule6 clearfix">
+        <li><a href="#" class="tit2">音乐</a></li>
+         <li><a href="#" class="tit3">时尚</a></li>
+          <li><a href="#" class="tit4">旅游</a></li>
+        </ul>
+        <ul class="yule7 clearfix">
+        <li><a href="#" class="tit2">搞笑</a></li>
+         <li><a href="#" class="tit3">原创</a></li>
+          <li><a href="#" class="tit4">拍客</a></li>
+        </ul>
+         <ul class="yule8 clearfix">
+        <li><a href="#" class="tit2">财经</a></li>
+         <li><a href="#" class="tit3">科技</a></li>
+          <li><a href="#" class="tit4">汽车</a></li>
+        </ul>
+        <ul class="yule9 clearfix">
+        <li><a href="#" class="tit2">军事</a></li>
+         <li><a href="#" class="tit3">教育</a></li>
+          <li><a href="#" class="tit4">记录片</a></li>
+        </ul>
+         <ul class="yule10 clearfix">
+        <li><a href="#" class="tit2">风云榜</a></li>
+         <li><a href="#" class="tit3">全网影视</a></li>
+          <li><a href="#" class="tit4">爱奇艺搜索</a></li>
+        </ul>
+        <ul class="yule11 clearfix">
+        <li><a href="#" class="tit2">公益</a></li>
+         <li><a href="#" class="tit3">直播中心</a></li>
+          <li><a href="#" class="tit4">爱奇艺出品</a></li>
+        </ul>
+        <ul class="yule12 clearfix">
+        <li><a href="#" class="tit2">PPS游戏</a></li>
+         <li><a href="#" class="tit3">应用商品</a></li>
+          <li><a href="#" class="tit4">爱奇艺商城</a></li>
+        </ul>
+         <ul class="yule13 clearfix">
+        <li><a href="#" class="tit2">PPS奇秀</a></li>
+         <li><a href="#" class="tit3">VIP会员</a></li>
+          <li><a href="#" class="tit4">个人中心</a></li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    <div class="box2">
+    <div class="box2-1 clearfix">
+    <h2 class="clearfix">今日焦点<span> 更多&gt;&gt;</span><span class="box2-2">独播</span></h2>
+    <ul>
+    <li><a href="#">俄方确认恐怖袭击致A321客机坠毁</a></li>
+     <li><a href="#">巴黎恐袭主脑为比利时人  IS威胁将袭击华盛顿</a></li>
+      <li><a href="#">四川宜宾首富被绑架勒索1亿 遭绑匪胁迫杀人 </a></li>
+       <li><a href="#">延时摄影拍北京三元桥大修  人社局长儿子吃空饷</a></li>
+        <li><a href="#">两女子地铁车厢吃卤味 大叔提醒反被骂关你屁事 </a></li>
+         <li><a href="#">女儿心酸作文:爸爸只爱手机  万元现金被老鼠咬碎</a></li>
+          <li><a href="#">实拍宝马漂移撞山变废铁  男子行窃太累教室睡着</a></li>
+    </ul>
+    <ul class="box2-3">
+    <li class="l1"><img src="../img/5.png" alt="" />
+    <p>作死男裸身跳进了仙人掌</p>
+    </li>
+    <li><img src="../img/6.png" alt="" />
+    <p>女孩将煤球放井盖吸油被炸</p>
+    </li>
+    </ul>
+        </div>
+        <div class="box3">
+        <img src="../img/7.png" alt="" />
+        <ul>
+        <li><a href="#">七分七秒:95后网络女主播年赚百万 谈直播"尺度"</a></li>
+        <li><a href="#">《跑男3》谢娜被玩"哭" 《云中歌》网播量破60亿</a></li>
+        <li><a href="#">曝吴佩慈香港剖腹产二胎男婴 赵忠祥揭春晚一审</a></li>
+        <li><a href="#">罗志祥《致命伤》MV 饥饿游戏3（下）游戏对战</a></li>
+        <li><a href="#">黄心猕猴桃0.99全国包邮 萌萌哒音箱28.8包邮</a></li>
+        </ul>
+        </div>
+        <div class="box4">
+        <ul>
+        <li><img src="../img/8.png" alt="" />
+        <p><a href="#">鹿晗神答题被疑虚报年龄</a></p>
+        </li>
+         <li><img src="../img/9.png" alt="" />
+        <p><a href="#">鬼马蒋劲夫变身傻白甜受虐</a></p>
+        </li>
+         <li><img src="../img/10.png" alt="" />
+        <p><a href="#">维秘天使教你练就魔鬼身材</a></p>
+        </li>
+        </ul>
+        </div>
+        </div>
+        
+        <div class="con">
+        <div class="con1">
+        <h3><a href="#">综艺 <span> 更多&gt;&gt;</span></a></h3>
+        <ul class="clearfix">
+        
+         <li><a href="#">爱上超模第2季</a></li>
+          <li><a href="#">晓松奇谈</a></li>
+           <li><a href="#">大牌对王牌</a></li>
+            <li><a href="#">流行之王</a></li>
+             <li class="a1"></li>
+           
+               
+        </ul>
+        </div>
+        <div class="con2 clearfix">
+        <ul class=" con23clearfix">
+        <li class="con22" ><img src="../img/12.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源公开童颜秘诀</p>
+        <li>
+        <li><img src="../img/13.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源秘诀</p>
+        <li>
+        <li><img src="../img/14.png"alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 开童颜秘诀</p>
+        <li>
+        <li><img src="../img/17.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        <li>
+        <li><img src="../img/16.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        <li>
+        </ul>
+        <div class="con2-4">
+        <img src="../img/18.png" alt="" />
+        <p class="con2-5">暖！TFBOYS誓称共进退</p>
+       
+        <p><a href="#">Jackson王嘉尔宿舍公开</a></p>
+         <p><a href="#">胡钟霍吻戏技术哪家强</a></p>
+          <p><a href="#">素妍看时旸吻戏嫉妒</a></p>
+           <p><a href="#">尼坤率队激战篮球赛</a></p>
+            <p><a href="#">奚梦瑶走维秘极致性感</a></p>
+       </ul>
+        </div>
+        </div>
+        </div>
+        <div class="con3">
+        <h2>奔跑吧兄弟第三季<span> 进入专题&gt;</span></h2>
+        <ul class="clearfix">
+        <li><img src="../img/19.png" alt="" />
+        <p><span>自制节目</span>Baby人生高音首 秀卖力演出破音</p>
+        </li>
+        <li><img src="../img/20.png" alt="" />
+        <p><span>自制节目</span>Baby人生高音首 秀卖力演出破音</p>
+        </li>
+		<li><img src="../img/21.png" alt="" /><p><span>自制节目</span>Baby人生高音首 秀卖力演出破音</p></li>
+		<li><img src="../img/22.png" alt="" /><p><span>自制节目</span>Baby人生高音首 秀卖力演出破音</p></li>
+        <li><img src="../img/23.png" alt="" /><p><span>自制节目</span>Baby人生高音首 秀卖力演出破音</p></li>
+        </ul>
+        </div>
+        <div class="con4">
+        <h2>脱口秀<span> 更多&gt;</span></h2>
+        <ul class="clearfix">
+        <li><img src="../img/24.png" alt="" />
+        <p>康熙来了 </p>
+        <p>谢依霖被赞好身材小S惊叹</p>
+        </li>
+        <li><img src="../img/25.png" alt="" />
+       <p>晓松奇谈 </p>
+        <p>解读袁世凯的过人之处</p>
+        </li>
+		<li><img src="../img/26.png" alt="" />
+       <p>时尚江湖 </p>
+        <p>甜馨被禁看李小璐新片</p>
+        </li>
+		<li><img src="../img/27.png" alt="" />
+        <p>今晚80后脱口秀</p>
+        <p>沈腾王自健上演婆媳大战</p>
+        </li>
+        <li><img src="../img/28.png" alt="" />
+        <p>SS小燕之夜 </p>
+        <p>香港第一女神！关之琳来袭</p>
+        </li>
+        </ul>
+        </div>
+        <div class="con5">
+        <img src="../img/29.png" alt="" />
+        </div>
+        <div class="con">
+        <div class="con6">
+        <h3><a href="#">综艺 <span> 更多&gt;&gt;</span></a></h3>
+        <ul class="clearfix">
+        
+         <li><a href="#">爱上超模第2季</a></li>
+          <li><a href="#">晓松奇谈</a></li>
+           <li><a href="#">大牌对王牌</a></li>
+            <li><a href="#">流行之王</a></li>
+             <li class="a2"></li>
+           
+               
+        </ul>
+        </div>
+        <div class="con7 clearfix">
+        <ul class=" con23clearfix">
+        <li class="con22" ><img src="../img/04-24.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-25.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源秘诀</p>
+        </li>
+        <li><img src="../img/04-27.png"alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-26.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-28.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        
+        </li>
+        <li><img src="../img/04-29.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-30.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        
+        </li>
+        </ul>
+       
+        </div>
+        </div>
+        </div>
+        <div class="con">
+        <div class="con6">
+        <h3><a href="#">综艺 <span> 更多&gt;&gt;</span></a></h3>
+        <ul class="clearfix">
+        
+         <li><a href="#">爱上超模第2季</a></li>
+          <li><a href="#">晓松奇谈</a></li>
+           <li><a href="#">大牌对王牌</a></li>
+            <li><a href="#">流行之王</a></li>
+             <li class="a2"></li>
+           
+               
+        </ul>
+        </div>
+        <div class="con7 clearfix">
+        <ul class=" con23clearfix">
+        <li><img src="../img/04-31.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源秘诀</p>
+        </li>
+        <li><img src="../img/04-32.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-33.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 殷志源秘诀</p>
+        </li>
+        <li><img src="../img/04-34.png"alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚 开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-35.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-36.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        
+        </li>
+        <li><img src="../img/04-37.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/04-38.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        
+        </li>
+        <li><img src="../img/04-36.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑将结婚源公开童颜秘诀</p>
+        </li>
+        <li><img src="../img/16.png" alt="" />
+        <p class="con2-1">非首脑会谈</p>
+        <p class="con2-2">Guillaume疑志源公开童颜秘诀</p>
+        
+        </li>
+        </ul>
+       
+        </div>
+        </div>
+        </div>
+        
+        <div class="list">
+        <h4>推广广告</h4>
+        <div class="list-1">
+        <ul class="clearfix">
+        <li class="list-2"></li>
+        <li><img src="../img/a1.png" alt="" /></li>
+        <li><img src="../img/a2.png" alt="" /></li>
+        <li><img src="../img/a3.png" alt="" /></li>
+        <li><img src="../img/a4.png" alt="" /></li>
+        <li><img src="../img/a5.png" alt="" /></li>
+         <li class="list-3"></li>
+        </ul>
+        </div>
+        </div>
+        <div class="list2 clearfix">
+        <div class="list2-1">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em><em>VIP会员</em><em>爱大片：单身人士N种自嗨指南</em> </h5>
+        <ul class="clearfix fl">
+        <li><img src="../img/04-44.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-45.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-46.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-47.png" alt=""/>
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-48.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-49.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-50.png" alt="" />
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        <li><img src="../img/04-51.png" alt=""/>
+        <p class="p1">天眼传奇</p>
+        <p class="p2">少年天眼的奇幻漂流</p>
+        </li>
+        </ul>
+        <div class="list3 clearfix">
+        <i></i>
+        <h5>电影榜 <span>更多&gt;</span> </h5>
+        
+       <img src="../img/a9.png" alt="" class="img1" />
+       <ul><li>
+       <img src="../img/a10.png" alt="" class="img2" />
+       <p class="p1 clearfix">天眼传奇<span class="list3-1">8.0</span></p>
+         <p class="p2">少年天眼的奇幻漂流</p></li></ul>
+        </div>
+        </div>
+        </div>
+        <div class="list4 clearfix">
+        <div class="list4-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        <h6>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em></h6>
+      	</div>
+        <ul class="clearfix">
+        <li><img src="../img/04-53.png" alt="" />
+        <p>真正的伤疤是牵挂</p>
+        </li>
+          <li><img src="../img/04-54.png" alt="" />
+          <p>真正的伤疤是牵挂</p>
+          </li>
+          <li><img src="../img/04-55.png" alt="" />
+          <p>真正的伤疤是牵挂</p>
+          </li>
+            <li><img src="../img/04-56.png" alt="" />
+            <p>真正的伤疤是牵挂</p>
+            </li>
+              <li><img src="../img/04-57.png" alt="" />
+              <p>真正的伤疤是牵挂</p>
+              </li>
+        </ul>
+        </div>
+        <div class="list5 clearfix">
+        <div class="list5-1">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em><em>VIP会员</em><em>爱大片：单身人士N种自嗨指南</em> </h5><h7>电影 <span> 更多&gt;</span></h7>
+        </div>
+        <ul class="clearfix">
+        <li><img src="../img/a12.png" alt="" />
+        <p>北上广不相信眼泪</p>
+        </li>
+        <li><img src="../img/03-03.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-04.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-01.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-01.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-05.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-08.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-06.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-07.png" alt="" /><p>北上广不相信眼泪</p></li>
+        <li><img src="../img/03-09.png" alt="" /><p>北上广不相信眼泪</p></li>
+        </ul>
+        </div>
+        </div>
+        <div class="list">
+        <h4>推广广告</h4>
+        <div class="list-1">
+        <ul class="clearfix">
+        <li class="list-2"></li>
+        <li><img src="../img/a1.png" alt="" /></li>
+        <li><img src="../img/a2.png" alt="" /></li>
+        <li><img src="../img/a3.png" alt="" /></li>
+        <li><img src="../img/a4.png" alt="" /></li>
+        <li><img src="../img/a5.png" alt="" /></li>
+         <li class="list-3"></li>
+        </ul>
+        </div>
+        </div>
+       <div class="list4  clearfix">
+        <div class="list4-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        <h8>电影 <span> 更多&gt;</span></h8>
+        <h7>电影 <span> 更多&gt;</span></h7>
+      	</div>
+        <ul class="name">
+        <li><img src="../img/a13.png" alt="" />
+        <p>灵域</p>
+        </li>
+        <li><img src="../img/03-11.png" alt="" /><p>灵域</p></li>
+         <li><img src="../img/03-12.png" alt="" /><p>灵域</p></li>
+          <li><img src="../img/03-13.png" alt="" /><p>灵域</p></li>
+           <li><img src="../img/03-14.png" alt="" /><p>灵域</p></li>
+            <li><img src="../img/03-15.png" alt="" /><p>灵域</p></li>
+             <li><img src="../img/03-16.png" alt="" /><p>灵域</p></li>
+        </ul>
+        </div>
+        <div class="last  clearfix">
+        <div class="last-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        <div class="last-2">
+        <ul class="clearfix">
+        <li><img src="../img/03-17.png" alt="" />
+        <p>佩兰:门柱和裁判改变结果</p>
+        </li> 
+        <li><img src="../img/03-18.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+         <li><img src="../img/03-22.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+          <li><img src="../img/03-23.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+        </ul>
+        </div>
+        <div class="last-3">
+        <ul class="clearfix">
+        <li><img src="../img/03-19.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+        <li><img src="../img/03-20.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+          <li><img src="../img/03-24.png" alt="" /><p>佩兰:门柱和裁判改变结果</p></li>
+        </ul>
+        <div class="last-4"><img src="../img/03-21.png" alt="" />
+        <p>佩兰:门柱和裁判改变结果</p>
+        </div>
+       </div>
+      	</div>
+        <div class="last2  clearfix">
+        <div class="last2-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <ul>
+        <li><img src="../img/03-25.png" alt="" />
+        <p>孩子的智商到底随谁呢</p>
+        </li>
+        <li><img src="../img/03-26.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-27.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-28.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-28.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        </ul>
+      	
+        </div>
+        <div class="last2  clearfix">
+        <div class="last2-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <ul>
+        <li><img src="../img/03-29.png" alt="" />
+        <p>孩子的智商到底随谁呢</p>
+        </li>
+        <li><img src="../img/03-30.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-31.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-32.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-33.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        </ul>
+      	
+        </div>
+        <div class="last2  clearfix">
+        <div class="last2-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <ul>
+        <li><img src="../img/03-34.png" alt="" />
+        <p>孩子的智商到底随谁呢</p>
+        </li>
+        <li><img src="../img/03-35.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-36.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-37.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-38.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        </ul>
+      	
+        </div>
+         <div class="last3  clearfix">
+        <div class="last3-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <div class="last3-2">
+        <ul class="clearfix">
+        <li><img src="../img/03-39.png" alt="" />
+        <p class="p1">非首脑会谈</p>
+        <p class="p2">Guillaume疑将结婚</p>
+        </li>
+        <li><img src="../img/03-40.png" alt="" />
+        <p class="p1">非首脑会谈</p>
+        <p class="p2">Guillaume疑将结婚</p>
+        </li>
+        <li><img src="../img/03-41.png" alt="" />
+        <p class="p1">非首脑会谈</p>
+        <p class="p2">Guil颜秘诀</p>
+        </li>
+        <li><img src="../img/03-46.png" alt="" />
+        <p class="p1">非首脑会谈</p>
+        <p class="p2">Guillaume疑将结婚 </p>
+        </li>
+        <li><img src="../img/03-45.png" alt="" />
+        <p class="p1">非首脑会谈</p>
+        <p class="p2">Guillaume疑将结婚 </p>
+        </li>
+        </ul>
+        <div class="last3-3"><img src="../img/logo4.png" alt="" /></div>
+        </div>
+        <div class="last2  clearfix">
+        <div class="last2-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <ul>
+        <li><img src="../img/03-48.png" alt="" />
+        <p>孩子的智商到底随谁呢</p>
+        </li>
+        <li><img src="../img/03-49.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-51.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-50.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-52.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        </ul>
+      	
+        </div>
+        <div class="last2  clearfix">
+        <div class="last2-1 clearfix">
+        <i></i>
+        <h5>电影 <span> 更多&gt;</span><em>爱奇艺爱电影</em><em>网络大电影</em> </h5>
+        </div>
+        <ul>
+        <li><img src="../img/03-48.png" alt="" />
+        <p>孩子的智商到底随谁呢</p>
+        </li>
+        <li><img src="../img/03-49.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-51.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-50.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-52.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-53.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-54.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-55.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        <li><img src="../img/03-56.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+         <li><img src="../img/03-57.png" alt="" /><p>孩子的智商到底随谁呢</p></li>
+        </ul>
+      	
+        </div>
+        <div class="last4">
+        <img src="../img/logo5.png" alt="" />
+        </div>
+        <div class="fenbu clearfix">
+        <div class="hezuo">
+        <h3>合作伙伴 <span>更多&gt;</span></h3>
+       
+            <ul >
+                <li><a href="#">万达电影院</a></li>
+                 <li><a href="#">花刺影视</a></li>
+                 <li><a href="#">百度V计划</a></li>
+                  <li><a href="#">智能电视网</a></li>
+              </ul>
+              <ul>
+        <li><a href="#">华谊兄弟</a></li>
+        <li><a href="#">百老汇</a></li>
+         <li><a href="#">央广视讯</a><li>
+         </ul>
+          <ul class="he1">
+        <li><a href="#">星美</a></li>
+        <li><a href="#">百度影视</a></li>
+        <li><a href="#">华录百度</a></li>
+        </ul>
+        <ul>
+        <li><a href="#">光线影院</a></li>
+        <li><a href="#">百度百科</a></li>
+		 <li><a href="#">百度贴吧</a></li>
+         </ul>
+         <ul>
+        <li><a href="#">电影网</a></li>
+        <li><a href="#">hao123</a></li>
+       
+         <li><a href="#">爱奇艺天猫店</a></li>
+         </ul>
+          </div>
+          <div class="dongtai">
+        <h3>合作伙伴 <span>更多&gt;</span></h3>
+       
+            <ul >
+                <li><a href="#">万达电影院</a></li>
+                 <li><a href="#">花刺影视</a></li>
+                 <li><a href="#">百度V计划</a></li>
+                  <li><a href="#">智能电视网</a></li>
+              </ul>
+              <ul>
+        <li><a href="#">华谊兄弟</a></li>
+        <li><a href="#">百老汇</a></li>
+         <li><a href="#">央广视讯</a><li>
+         </ul>
+          </div>
+        </div>
+        <div class="footer">
+        <ul class="clearfix">
+        <li><a href="#">公司介绍</a></li>
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="#">联系方式</a></li>
+        <li><a href="#">招聘英才</a></li>
+        <li><a href="#">爱奇艺实验室</a></li>
+        <li><a href="#">开放平台</a></li>
+         <li><a href="#">应用商店</a></li>
+        <li><a href="#">爱奇艺论坛</a></li>
+        <li><a href="#">帮助与反馈</a></li>
+        <li><a href="#">侵权投诉</a></li>
+        <li><a href="#">About Us</a></li>
+        </ul>
+        <p class="p1"><span class="f1">违法和不良信息举报电话:400-800-7171</span><span class="f2">举报邮箱:jubao356@qiyi.com</span></p>
+        <p class="p2">违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信息举报电话违法和不良信违法和不良</p>
+        <p class="p3">Copyright @2015 爱奇艺 All Rights Reserved</p>
+        </div>
+        
+</body> 
+</html>

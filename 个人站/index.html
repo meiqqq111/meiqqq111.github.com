@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content='IE-edge,chrome=1'>
+    <title></title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var browser=navigator.appName;
+        var b_version=navigator.appVersion;
+        var version=b_version.split(";");
+        var trim_Version=version[1].replace(/[ ]/g,"");
+        if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0")
+        {
+            alert('此网站暂不支持低版本浏览器，建议使用IE10以上版本或Firefox、Chrome等高级浏览器浏览!');
+        }
+        else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0")
+        {
+            alert('此网站暂不支持低版本浏览器，建议使用IE10以上版本或Firefox、Chrome等高级浏览器浏览!');
+        }
+        else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0")
+        {
+            alert('此网站暂不支持低版本浏览器，建议使用IE10以上版本或Firefox、Chrome等高级浏览器浏览!');
+        }
+        else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0")
+        {
+            alert('此网站暂不支持低版本浏览器，建议使用IE10以上版本或Firefox、Chrome等高级浏览器浏览!');
+        }
+
+    </script>
+</head>
+<body>
+<!--header  begin-->
+<div id="header" style="opacity: 0.3;"></div>
+<header style="opacity: 1;" class="clearfix">
+    <div class="logo">
+        <a href="#home_info">
+            <img src="img/1-1.jpg" alt="">
+            <div class="header_p">
+                <p class="header_p1">齐兴梅</p>
+                <p class="header_p2">个人简历</p>
+            </div>
+        </a>
+        <div class="ddw">
+            <p>我叫齐兴梅</p>
+            <p>22岁</p>
+            <p>想成为一名前端开发工程师</p>
+            <p>tel：15230261708</p>
+            <p>Email：15230261708@sina.cn</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="随记.html">随笔</a></li>
+            <li><a href="zuopin/官网分页/官网分页4.html">作品</a></li>
+            <li><a href="javascript:;">关于</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!--header end-->
+<!-- home page begin -->
+<div id="section_wrap">
+    <!--第一屏 首页-->
+    <div class="section" style="background:url(images/12.jpg) no-repeat #e7eff1;">
+        <img src="images/42.png" style="width: 480px;margin-top: 130px; margin-left: 350px"/>
+        <audio src="mp3/雨的印记.mp3" controls autoplay loop></audio>
+    </div>
+    <!--第一屏 end-->
+
+    <!--第二屏 专业技能-->
+    <div class="section" style="background:#adff98;">
+        <div class="skill_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>专业技能</h1>
+                <div class="title_en reverse">
+                    <h2>· Skill ·</h2>
+                </div>
+            </div>
+            <div id="skill_info"><p>IT行业的学习需要持之以恒，知识深度与广度都很重要。HTML、CSS和JavaScript是前端技术中最核心的三个元素，而前端开发的重中之重就是对原生javascript的理解。另外还在不断学习新的知识，如angular，html5，php等等。学的不仅是技术，更是梦想！ </p></div>
+            <div class="skill_list">
+                <div class="skill_list_content skill_scale" id="skill_list1">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon1">
+                        <img src="img/html.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name1">HTML</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int1">
+                        <ul>
+                            <li>熟练掌握HTML</li>
+                            <li>熟练运用html标签</li>
+                            <li>能编写符合W3C标准的代码</li>
+                            <li>了解前端性能优化</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list2">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon2">
+                        <img src="img/css.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name2">CSS</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int2">
+                        <ul>
+                            <li>熟练掌握CSS</li>
+                            <li>易维护的HTML+CSS;还原视觉设计</li>
+                            <li>注重浏览器兼容性，了解常见的css hack</li>
+                            <li>了解模块化开发</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list3">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon3">
+                        <img src="img/js.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name3">JavaScript</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int3">
+                        <ul>
+                            <li>熟练掌握及使用原生JS</li>
+                            <li>掌握ajax的运作原理</li>
+                            <li>注重JavaScript性能优化</li>
+                            <li>会用jQuery库，了解js闭包等</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list4">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon4"><img src="img/Hfive.png" alt=""></div>
+                    <div class="skill_name" id="skill_name4">H5&&CSS3</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int4">
+                        <ul>
+                            <li>掌握html5</li>
+                            <li>熟练运用css3新属性,了解响应式设计</li>
+                            <li>熟悉SVN，Git版本控制工具</li>
+                            <li>了解响应式设计</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第二屏 end-->
+
+    <!--第三屏 我的特效-->
+    <div class="section" style="background:yellow;">
+        <div class="js_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>我的特效</h1>
+                <div class="title_en reverse">
+                    <h2>· EFFECT ·</h2>
+                </div>
+            </div>
+        </div>
+        <div class="js_list_slider b_to_t">
+            <div class="js_scale" id="js_list">
+                <div class="js_list_content clearfix" style="width: 2700px;">
+                    <div class="js_list bg1">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>3D爆炸效果</dt>
+                                <dd>点击图片，产生3D爆炸的效果</dd>
+                                <dd>此效果主要运用了CSS3中的transform，translate3d和rotate</dd>
+                                <dd>当运动结束的时候改变transform，translate3d和rotate为0</dd>
+                                <dd>此效果只支持高级浏览器</dd>
+                                <p class="js_list_link">
+                                    点击右面的图片，进入3D爆炸效果
+                                </p>
+                            </dl>
+                            <a href="work/case/爆炸/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="js_list bg2">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>3D切换效果</dt>
+                                <dd>单击按钮“左”和“右”切换图片</dd>
+                                <dd>此效果主要运用了CSS3中的倒影，景深，translate和rotate</dd>
+                                <dd>此外还用到了一些数组的操作方法</dd>
+                                <dd>此效果只支持高级浏览器，其中倒影效果支持Chrome</dd>
+                                <p class="js_list_link">点击右面的图片，进入3D切换效果</p>
+                            </dl>
+                            <a href="work/case/3D/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="js_list bg3">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>3D轮播环</dt>
+                                <dd>当鼠标左键按下的时候，向左或右拖动</dd>
+                                <dd>此效果主要运用的是<a href="#" class="md-trigger">transform</a></dd>
+                                <dd></dd>
+                                <p class="js_list_link">点击右面的图片，进入3D效果</p>
+                            </dl>
+                            <a href="work/case/轮播/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="js_list_to">
+                    <div class="js_list_toleft" id="prev">
+                        <img src="img/left.png">
+                    </div>
+                    <div class="js_list_toright" id="next">
+                        <img src="img/right.png">
+                    </div>
+                </div>
+            </div>
+            <div id="js_timeline" class="js_scale">
+                <div>
+                    <a href="#" title="爆炸效果"></a>
+                    <a href="#" title="3D切换"></a>
+                    <a href="#" title="照片墙"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第三屏 end-->
+
+    <!--第四屏 我的移动端-->
+    <div class="section" style="background:#ff2acb;">
+        <div class="mobile_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>我的移动端</h1>
+                <div class="title_en reverse">
+                    <h2>· MOBILE ·</h2>
+                </div>
+            </div>
+        </div>
+        <div id="mobile_content_list">
+            <ul class="mobile_box">
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                        <span class="mobile_box_hover">
+                            <p class="mobile_box_title">guokr</p>
+                            <span class="mobile_box_hover_icon">
+                                <a href="job/guokr/index.html"  target="_blank" class="mobile_box_link">
+
+                                </a>
+                            </span>
+                        </span>
+                        <img src="images/44.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale bounceInDown">
+                    <div class="mobile_box_content">
+                         <span class="mobile_box_hover">
+                             <p class="mobile_box_title">个人中心</p>
+                             <span class="mobile_box_hover_icon">
+                                 <a href="job/个人中心/index.html" target="_blank" class="mobile_box_link">
+
+                                 </a>
+                             </span>
+                         </span>
+                        <img src="images/45.jpg" alt=""class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                          <span class="mobile_box_hover">
+                              <p class="mobile_box_title">当当网</p>
+                              <span class="mobile_box_hover_icon">
+                                  <a href="job/当当网/index2.html" target="_blank" class="mobile_box_link">
+                                  </a>
+                              </span>
+                          </span>
+                        <img src="images/43.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                        <span class="mobile_box_hover">
+                            <p class="mobile_box_title">新闻首页</p>
+                            <span class="mobile_box_hover_icon">
+                                <a  href="job/新闻首页/index.html" target="_blank" class="mobile_box_link">
+                                </a>
+                            </span>
+                        </span>
+                        <img src="images/8.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="mobile_info">
+            <p>这是我的移动端作品。</p>
+            <p>更多demo请移步
+                <a  href="work/here/demo-index.html" target="_blank">这里</a>。
+            </p>
+        </div>-->
+    </div>
+    <!--第四屏 E-->
+
+    <!--第五屏 我的作品-->
+    <div class="section" style="background:pink;">
+        <div class="demo_content" style="padding-top:85px;">
+            <div class="title">
+                <h1><a href="javascript:;">我的作品</a></h1>
+                <div class="title_en reverse">
+                    <h2><a href="javascript:;"> · DEMO ·</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="demo_list" id="demo_list">
+            <ul class="clearfix" id="demo_content">
+                <li class="demo_tab_li ileft">
+                    <img src="images/41.jpg"/>
+                    <a href="job/灵魂回响/灵魂回响2.html/" target="_blank">
+                        <span class="lg">灵魂回响</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li up">
+                    <img src="images/40jpg.jpg"/>
+                    <a href="job/爱奇艺/爱奇艺.html/" target="_blank">
+                        <span class="lg">爱奇艺</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li iright">
+                    <img  src="images/25.jpg"/>
+                    <a href="job/oppo/oppo.html/" target="_blank">
+                        <span class="lg">oppo</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li ileft">
+                    <img src="images/26.jpg"/>
+                    <a href="job/360/3601.html/" target="_blank">
+                        <span class="lg">360</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li up">
+                    <img src="images/38.jpg"/>
+                    <a href="job/美丽说/美丽说.html/" target="_blank">
+                        <span class="lg">美丽说</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li iright">
+                    <img  src="images/39.jpg"/>
+                    <a href="job/京东/index.html" target="_blank">
+                        <span  class="lg">京东</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--第五屏 end-->
+
+    <!--底部 B-->
+    <div class="section" id="section-footer">
+        <div id="footer-text">
+            <div class="footer">
+                <div class="footer_content">
+                    <a href="javascript:;">QQ</a>|
+                    <a href="javascript:;" target="_blank">微博</a>|
+                    <a href="javascript:;">知乎</a>|
+                    <a href="javascript:;">人人</a>|
+                    <a href="javascript:;" target="_blank">Github</a>
+                </div>
+                <div class="footer_content">All Rights Reserved&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!--底部 E-->
+</div>
+<!-- home page end -->
+<script>
+    window.onload = function () {
+        var oBtn = document.getElementById('btn');
+        var timer=null;
+        var lock = false;
+        window.onscroll=function(){
+            var srcoll = document.documentElement.scrollTop || document.body.scrollTop;
+            if(lock){
+                clearInterval(timer);
+            }
+            lock=true;
+            if(srcoll<=0){
+                oBtn.style.display='none';
+            }else{
+                oBtn.style.display='block';
+            }
+        };
+        oBtn.onclick=function(){
+            clearInterval(timer);
+            var Srcoll = document.documentElement.scrollTop || document.body.scrollTop;
+            var start = Srcoll;
+            var dis = 0-start;
+            var count=Math.floor(2000/30);
+            var n=0;
+            timer=setInterval(function(){
+                n++;
+                //让谁动
+                lock=false;
+                document.documentElement.scrollTop=document.body.scrollTop=start+dis*n/count;
+                if(n==count){
+                    clearInterval(timer);
+                }
+            },30)
+        };
+    };
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('#section_wrap').fullpage({
+            anchors:['1', '2', '3','4','5','footer'],
+            'navigation': true,
+            'resize':false,
+            'verticalCentered':false,
+            'scrollingSpeed':200,
+            'keyboardScrolling':true
+        });
+        for(var i=0;i<5;i++){
+            $('#fp-nav ul li').eq(i).addClass('li_'+i)
+        }
+
+        // 第二屏我的专业技能
+        $(".skill_list b").click(function() {
+            $(".skill_int").each(function() {
+                if ($(this).is(":visible")) {
+                    $(this).slideUp(200);
+                    $(this).prev().removeClass("skill_flag_scale");
+                }
+            });
+            if ($(this).siblings(".skill_int").is(":hidden")) {
+                $(this).siblings(".skill_int").slideDown(600);
+                $(this).siblings(".skill_flag").addClass("skill_flag_scale");
+            } else {
+                $(this).siblings(".skill_int").slideUp(200);
+                $(this).siblings(".skill_flag").removeClass("skill_flag_scale");
+            }
+        });
+
+        //第四屏--我的特效切换
+
+        var page=1;
+        $("#js_timeline a").click(function(){
+            $(".js_list_content").stop(true,false).animate({left:-$(".js_list").width()*$(this).index()},1000);
+            page=$(this).index()+1;
+        })
+        //上一个
+        $('#prev').click(function() {
+            if (!$(".js_list_content").is(":animated")) {
+                if (page == 1) {
+                    $(".js_list_content").animate({
+                        left: "+=50"
+                    }, 200, function() {
+                        $(this).animate({
+                            left: "-=50"
+                        }, 200);
+                    });
+                    return false;
+                }
+                $(".js_list_content").animate({
+                    left: "+=" + $(".js_list").width()
+                });
+                page--;
+            }
+        });
+
+        //下一个
+        $('#next').click(function() {
+            if (!$(".js_list_content").is(":animated")) {
+                if (page == 3) {
+                    $(".js_list_content").animate({
+                        left: "-=50"
+                    }, 200, function() {
+                        $(this).animate({
+                            left: "+=50"
+                        }, 200);
+                    });
+                    return;
+                }
+                $(".js_list_content").animate({
+                    left: "-=" + $(".js_list").width()
+                });
+                page++;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

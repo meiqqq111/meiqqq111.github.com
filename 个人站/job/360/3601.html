@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../css/base.css" rel="stylesheet"/>
+<style>
+
+.box{ width:1007px; margin:0 auto; height:70px; border-bottom:2px solid #22ac38;}
+h1{ width:148px; height:23px; background:url(../img/1.png) no-repeat; margin-top:25px; margin-bottom:23px; text-indent:-999em; margin-left:5px;}
+.box img{ margin-top:-49px; margin-left:183px; }
+	.box li{ float:right;}
+	.clearfix:after{ display:block; content:''; clear:both;}
+	.clearfix{ zoom:1;}
+	.box ul{ position:relative;}
+	.box .a3{ width:100px; height:26px; background:url(../img/2.png) no-repeat; position:absolute; left:713px; top:-30px;  }
+	.box .s3{ display:block; margin-left:30px; text-align:center; font-size:14px; color:#666666; }
+	.box .a2{ width:100px; height:26px; background:url(../img/3.png) no-repeat; position:absolute; left:825px; top:-30px;  }
+	.box .s2{ display:block; margin-left:30px; text-align:center; font-size:14px; color:#666666; }
+	.box .a1{ width:100px; height:26px; background:url(../img/3.png) no-repeat; position:absolute; left:935px; top:-30px;  }
+	.box .s1{ display:block; margin-left:30px; text-align:center; font-size:14px; color:#666666; }
+	.box-1{width:1007px;  margin:0 auto;}
+	.box-1 .lia{margin-top:14px; }
+	.box-1 li{ float:left; margin-right:22px;  margin-top:14px; }
+	.box-1 a{ font-size:16px; color:#666;}
+	.box-2 .img1{ width:1007px; height:484px; margin:0 auto; margin-top:16px;}
+	.box-2   .img2{ position:relative; left:170px; top:-150px;   width:97px; height:55px; }
+	.box-2 .img3{ position:relative;left:290px; top:-205px; width:97px; height:55px;}
+	.box-2 .img4{position:relative; left:411px;top:-260px; width:97px; height:55px;}
+	.box-2 .img5{position:relative; left:528px;top:-315px; width:97px; height:55px;}
+	.box-2 .img6{position:relative; left:644px;top:-370px; width:97px; height:55px;}
+	.box-2 .img7{ position:relative; left:755px;top:-425px; width:97px; height:55px;}
+	.box-2 .img8{ position:relative; left:864px;top:-480px; width:97px; height:55px;}
+	.box-2 .img9{ position:relative; left:970px;top:-535px; width:97px; height:55px;}
+	.box-2 .img10{ position:relative; left:1080px;top:-590px; width:97px; height:55px;}
+	.box-2 .p1{ margin-top:-760px; font-size:34px; color:#fff; font-weight:bold; margin-left:190px;}
+	.box-2 .p2{ font-size:18px; color:#fff; margin-left:190px; margin-top:28px;}
+	.box2{ width:1007px;  margin:0 auto; position:relative; margin-top:40px; margin-bottom:35px; }
+	.box2 li{ float:left;margin-top:180px; line-height:40px;}
+	.box2 .hot{ font-size:31px; color:#2b2b2b; margin-right:31px; border-right:none;}
+	.box2 a{ font-size:13px; color:#242424; margin-top:220px; text-align:center; margin-right:14px; border-right:1px solid #bdbdbd; padding-right:14px;}
+	 .box2 .hot1{ border-right:none;}
+	  .box2 .hot2{ margin-left:330px; font-size:23px; color:#333333; border-right:none;}
+	  .news{ position:relative; float:left; margin-bottom:30px;}
+	 .news .news-1{ background:#000; width:376px; height:22px; opacity:0.8; filter:alpha( opacity=80); position:absolute; left:0; bottom:0;  }
+	 .news-01{ position:absolute; left:0; bottom:5px; color:#fff; left:4px;}
+	 .news-02{ position:absolute; left:4px; top:268px; font-size:14px;  color:#444444;}
+	 .news-2 .news-03{ position:absolute;left:385px; top:226px;}
+	 .news-2 .news-1{ background:#000; width:176px; height:22px; opacity:0.8; filter:alpha( opacity=80); position:absolute; left:0; bottom:0;  }
+	 .news-04{ position:absolute; left:4px; top:112px; font-size:14px; color:#444444; }
+	 .news-2 .news-4{ background:#000; width:176px; height:22px; opacity:0.8; filter:alpha( opacity=80); position:absolute; left:0; bottom:0px;  }
+	 .news-05{ width:180px; height:134px; background:#fff; position:absolute; left:385px; top:379px; font-size:14px; color:#444444;}
+	 .news-06{ position:absolute; left:0; bottom:39px; color:#fff; left:4px;}
+	 .news-2 .news-5{ background:#000; width:176px; height:22px; opacity:0.8; filter:alpha( opacity=80); position:absolute; left:0; bottom:34px;  }
+	 .news-2 .news-07{ position:absolute;left:569px; top:226px;}
+	 .news-08{ width:180px; height:134px; background:#fff; position:absolute; left:569px; top:379px; font-size:14px; color:#444444;}
+	 .right{  width:260px;  float:left; margin-left:550px; }
+	 .right img{ margin-bottom:22px; margin-top:-290px; margin-left:220px;}
+	 .right .img1{ margin-top:-23px;}
+	 .box3{ width:1007px; margin:0 auto; position:relative; margin-bottom:20px;}
+	.box3 li{ float:left;  }
+	.box3 .hot{ font-size:31px; color:#2b2b2b; margin-right:31px; border-right:none;}
+	.box3 a{ font-size:13px; color:#242424; margin-top:220px; text-align:center; margin-right:14px; border-right:1px solid #bdbdbd; padding-right:14px;}
+	 .box3 .hot1{ border-right:none;}
+	 .box3 .hot2{ margin-left:330px; font-size:23px; color:#333333; border-right:none;}
+	 .con{ width:1007px; margin:0 auto; }
+	 .con .p1{ margin-top:15px; line-height:10px; font-size:15px; color:#363636;}
+	.con .p2{ margin-top:10px; font-size:14px; color:#939393;}
+	.con li{ float:left; margin-right:10px; margin-bottom:10px;}
+	.con .top{ float:right; margin-top:-614px;}
+	.box4{ width:1007px; margin:0 auto; position:relative; margin-bottom:20px; margin-top:35px;}
+	.box4 li{ float:left; }
+	.box4 .hot{ font-size:31px; color:#2b2b2b; margin-right:31px; border-right:none;}
+	.box4 a{ font-size:13px; color:#242424; margin-top:220px; text-align:center; margin-right:14px; border-right:1px solid #bdbdbd; padding-right:14px;}
+	 .box4 .hot1{ border-right:none;}
+	 .box4 .hot2{ margin-left:330px; font-size:23px; color:#333333; border-right:none;}
+	 .con{ width:1007px; margin:0 auto; }
+	 .con .p1{ margin-top:15px; line-height:10px; font-size:15px; color:#363636;}
+	.con .p2{ margin-top:10px; font-size:14px; color:#939393;}
+	.con li{ float:left; margin-right:10px; margin-bottom:10px;}
+	.con .top{ float:right; margin-top:-614px;}
+	.box5{ width:1007px; margin:0 auto; position:relative; margin-bottom:20px; margin-top:35px;}
+	.box5 li{ float:left; }
+	.box5 .hot{ font-size:31px; color:#2b2b2b; margin-right:31px; border-right:none;}
+	.box5 a{ font-size:13px; color:#242424; margin-top:220px; text-align:center; margin-right:14px; border-right:1px solid #bdbdbd; padding-right:14px;}
+	 .box5 .hot1{ border-right:none;}
+	 .box5 .hot2{ margin-left:587px; font-size:23px; color:#333333; border-right:none; margin-bottom:20px;}
+	 .box5 li{ margin-right:0px; margin-top:0px; } 
+	 .box5 .imga{ margin-right:-17px;}
+	 .movic a{ font-size:13px; color:#4a4a4a; border-right:none;}
+	 .movic p{ margin:14px 0 9px 30px;}
+	 .movic .imga a{  font-weight:bold; color:#4b4b4b; border-right:none;}
+	 .play{  float:left; margin-right:6px;}
+	 .play1{ width:380px; float:left; margin-top:-10px;}
+	 .play3 img,.play4 img{  margin-top:21px;}
+	 .footer{ width:645px; margin-right:0;}
+	 .li1{ margin-right:}
+	 .footer1{ float:right; margin-top:-207px;}
+	 .tit{ margin:0 auto; margin-left:470px; margin-top:203px; margin-bottom:18px;}
+	 .tit li{ float:left;}
+	 .tit a{ font-size:12px; color:#666666; border-right:1px solid  #ccc; padding-right:10px; padding-left:9px;} 
+	 .tit .tit1{ border-right:none;}
+	 .tit p{ font-size:11px; color:#666; margin-left:-100px; margin-top:18px; }
+</style>  
+</head>
+
+<body>
+
+	<div class="box">
+    	<h1><a href="#">360影视</a></h1>
+        <img src="../img/6.png" alt="" />
+        <ul class="clearfix">
+        	<li><a href="#" class="a1"><span class="s1">APP下载</span></a></li>
+            <li><a href="#"  class="a2"><span class="s2">观看记录</span></a></li>
+            <li><a href="#"  class="a3"><span class="s3">我的影视</span></a></li>
+        </ul>
+    </div>
+     <div class="box-1">
+    	<ul class="clearfix">
+        	<li><a href="#" class="">首页</a></li>
+            <li><a href="#">网络院线</a></li>
+            <li><a href="#">电视剧</a></li>
+            <li><a href="#">电影.预告</a></li>
+            <li><a href="#">综艺</a></li>
+            <li><a href="#">动漫</a></li>
+            <li><a href="#">资讯</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">直播</a></li>
+             <li><a href="#">广场</a></li>
+            <li><a href="#">秀场</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#">舞蹈</a></li>
+            <li><a href="#">音乐</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">专题</a></li>
+        </ul>
+    </div>
+  	  <div class="box-2">
+    	<img src="../img/7.png" alt="" class="img1" />
+        <ul class=" box1"> 
+        	<li><img src="../img/8.png" alt=""  class="img2"/></li>
+            <li><img src="../img/9.png" alt=""  class="img3"/></li>
+            <li><img src="../img/10.png" alt=""  class="img4"/></li>
+            <li><img src="../img/11.png" alt=""  class="img5"/></li>
+            <li><img src="../img/12.png" alt="" class="img6"/></li>
+            <li><img src="../img/13.png" alt=""  class="img7"/></li>
+            <li><img src="../img/14.png" alt=""  class="img8"/></li>
+            <li><img src="../img/15.png" alt=""  class="img9"/></li>
+            <li><img src="../img/16.png" alt=""  class="img10"/></li>
+        </ul>
+        <p class="p1">大汉情缘之云中歌</p>
+        <p class="p2">云哥嫁孟珏上演冷血复仇 四度与霍成军对峙</p>
+    </div>
+    <div class="box2 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2">独家热门资讯</a></li>
+        </ul>
+        <div class="news">
+        	<img src="../img/17.png" alt="" />
+            <div class="news-1"></div>
+            <p class="news-01">趁其不备拔腿逃走</p>
+            <p class="news-02">女子餐厅被刀架脖劫持 假装喂劫犯饮料瞬间逃离</p>
+        </div>
+        <div class="news-2">
+        	<div class="news-03">
+            	<img src="../img/18.png" alt="" />
+                <div class="news-4"></div>
+                <p class="news-01">与TFBOYS合影</p>
+            	<p class="news-04">李小璐甜馨穿亲子装出街</p>
+            </div>
+            <div class="news-05">
+            	<img src="../img/19.png" alt="" />
+                <div class="news-5"></div>
+                <p class="news-06">与TFBOYS合影</p>
+            	<p class="news-04">北京居民遛狗现淫秽窝点</p>
+            </div>
+        </div>
+        <div class="news-2">
+        	<div class="news-07">
+            	<img src="../img/20.png" alt="" />
+                <div class="news-4"></div>
+                <p class="news-01">小女儿罕见露面</p>
+            	<p class="news-04">文章为爱马庆生照曝光</p>
+            </div>
+            <div class="news-08">
+            	<img src="../img/21.png" alt="" />
+                <div class="news-5"></div>
+                <p class="news-06">与TFBOYS合影</p>
+            	<p class="news-04">澳海滩现奇特蓝色生物</p>
+            </div>
+        </div> 
+      <div class="right">
+        <img src="../img/22.png" alt="" />
+       <img src="../img/25.png" alt=""  class="img1"/>
+        </div>
+    </div>
+   
+  <div class="box3 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2">独家热门资讯</a></li>
+        </ul>
+        </div>
+            
+        <div class="con">
+        	<ul class="clearfix">
+            	<li>
+                <img src="../img/23.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                <li>
+                <img src="../img/a1.png" alt="" class="img1" />
+                <p class="p1">万万没想到 第三季</p>
+                <p class="p2">男神大锤迷倒众女神</p>
+                </li>
+                 <li>
+                <img src="../img/a2.png" alt="" class="img1" />
+                <p class="p1">野山鹰</p>
+                <p class="p2">中国版“霹雳娇娃”</p>
+                </li>
+                 <li>
+                <img src="../img/a3.png" alt="" class="img1" />
+                <p class="p1">大秧歌</p>
+                <p class="p2">屌丝逆袭！广场舞也有春天</p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                <img src="../img/a4.png" alt="" class="img1" />
+                <p class="p1">别有动机</p>
+                <p class="p2">港式高智商烧脑电影</p>
+                </li>
+                <li>
+                <img src="../img/a5.png" alt="" class="img1" />
+                <p class="p1">大汉情缘之云中歌</p>
+                <p class="p2">Angelababy古装绝美虐恋</p>
+                </li>
+                 <li>
+                <img src="../img/a6.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                 <li>
+                <img src="../img/a7.png" alt="" class="img1" />
+                <p class="p1">反恐特战队</p>
+                <p class="p2">真枪实弹爆炒小鲜肉</p>
+                </li>
+            </ul>
+            <div class="top">
+            	<img src="../img/24.png" alt="" />
+                <img src="../img/33.png" alt="" />
+            </div>
+        </div>
+        <div class="box4 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2">独家热门资讯</a></li>
+        </ul>
+        </div>
+            
+        <div class="con">
+        	<ul class="clearfix">
+            	<li>
+                <img src="../img/360官网1_26.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                <li>
+                <img src="../img/360官网1_28.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                 <li>
+                <img src="../img/360官网1_30.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                 <li>
+                <img src="../img/360官网1_31.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+            </ul>
+            <ul class="clearfix">
+            	<li>
+                <img src="../img/360官网1_41.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                <li>
+                <img src="../img/360官网1_43.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                 <li>
+                <img src="../img/360官网1_44.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+                 <li>
+                <img src="../img/360官网1_40.png" alt="" class="img1" />
+                <p class="p1">家和万事兴TV版</p>
+                <p class="p2">豪门的家庭 怎么会和睦</p>
+                </li>
+            </ul>
+            <div class="top">
+            	<img src="../img/360官网1_33.png" alt="" />
+                <img src="../img/33.png" alt="" />
+            </div>
+        </div>
+     <div class="box5 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2">独家热门资讯</a></li>
+        </ul>
+        <ul class="movic">
+        <li><img src="../img/360官网1_49.png" alt="" />
+        <p><a href="#">《绝命海拔》</a></p>
+        </li>
+        <li><img src="../img/360官网1_50.png" alt="" />
+         <p><a href="#">《绝命海拔》</a></p>
+        </li>
+        <li><img src="../img/26.png" alt="" />
+         <p><a href="#">《绝命海拔》</a></p>
+        </li>
+        <li><img src="../img/360官网1_53.png" alt="" />
+         <p><a href="#">《绝命海拔》</a></p>
+        </li>
+        <li><img src="../img/27.png" alt=""  class="imga"/>
+         <p><a href="#">亿万票房女王白百何的上位史</a></p>
+        </li>
+        </ul>
+        </div>
+        <div class="box5 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2">独家热门资讯</a></li>
+        </ul>
+        <div class="play">
+        	<img src="../img/28.png" alt="" />
+            <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+        </div>
+        <ul class="play1 clearfix">
+        	<li class="play2"><img src="../img/29.png" alt="" />
+            <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play2"><img src="../img/360官网2_07.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play3"><img src="../img/360官网2_15.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play4"><img src="../img/360官网2_18.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            </ul>
+             <div>
+             <img src="../img/30.png" alt="" />
+             </div>
+        
+        </div>
+        <div class="box5 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#" class="hot1">更多&gt;&gt;</a></li> 
+            <li><a href="#" class="hot2"></a></li>
+        </ul>
+        <div class="play">
+        	<img src="../img/360官网2_23.png"  alt="" />
+            <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+        </div>
+        <ul class="play1 clearfix">
+        	<li class="play2"><img src="../img/360官网2_25.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play2"><img src="../img/360官网2_27.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play3"><img src="../img/360官网2_30.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            <li class="play4"><img src="../img/360官网2_32.png" alt="" />
+             <p >家和万事兴TV版</p>
+                <p>豪门的家庭 怎么会和睦</p>
+            </li>
+            </ul>
+             <div>
+             <img src="../img/32.png" alt="" />
+             </div>
+        
+        </div>
+        <div class="box5 clearfix">
+    	<ul class="clearfix">
+        	<li><a href="#" class="hot">今日热门</a></li>
+            <li><a href="#">热点</a></li>
+            <li><a href="#">美女</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">搞笑</a></li>
+        </ul>
+      <div class="footer">
+        <ul>
+        <li><img src="../img/360官网2_41.png" alt="" /></li>
+         <li><img src="../img/360官网_40.png" alt="" /></li>
+          <li><img src="../img/360官网_40-14.png" alt=""  class="li1"/></li>
+        </ul>
+        <ul>
+        <li><img src="../img/360官网_40-16.png"" alt="" /></li>
+         <li><img src="../img/360官网_40-17.png" alt="" /></li>
+          <li><img src="../img/360官网_40-18.png" alt="" /></li>
+        </ul>
+        </div>
+        <div class="footer1"><img src="../img/360官网_40-15.png" alt="" /></div>
+        </div>
+     <div class="tit">
+     <ul class="clearfix">
+     <li><a href="#">意见反馈</a></li>
+      <li><a href="#">官方微博</a></li>
+       <li><a href="#">加入收藏</a></li>
+       <li><a href="#">版权声明</a></li>
+      <li><a href="#">关于我们</a></li>
+       <li><a href="#" charset="tit1">联系方式</a></li>
+     </ul>
+    <p>Copyright@360安全网址.All Rights Reserved.    浙ICP证B2-20090064号    信息网络传播视听节目许可证1109357号</p>
+     </div>   
+        
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1"/>
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        html{font-size: 20px;}
+        .wrap{
+            width: 18.75rem;
+            height: 32.35rem;
+            background: #ececf4;
+        }
+        .banner{
+            width: 18.75rem;
+            height: 2.1rem;
+            background: #fff;
+            position: relative;
+        }
+        .banner span a{
+            position: absolute;
+            left: 0.425rem;top: 0.75rem;
+            width: 0.375rem;
+            height: 0.6rem;
+            background: url(images/01.png) no-repeat;
+            background-size: 100%;
+        }
+        .banner a{
+            text-decoration: none;
+            color: #000;
+            font-size: 0.6rem;
+            position: absolute;
+            left: 1.5rem;top: 0.85rem;
+        }
+        .banner h1{
+            font-size: 0.825rem;
+            color: #000;
+            position: absolute;
+            left: 7.6rem;top:0.625rem ;
+        }
+        .ziliao{
+            margin-top: 0.75rem;
+            width: 18.75rem;
+            height: 5.5rem;
+        }
+        .ziliao img{
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+        }
+        .dingdan{
+            width: 18.75rem;
+            height: 1.8rem;
+            background: #fff;
+            margin-top: 0.65rem;
+        }
+        .dingdan ul{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            text-align: center;
+        }
+        .dingdan ul li{
+            width: 6.2rem;
+            height: 1.35rem;
+            float: left;
+            list-style: none;
+          overflow: hidden;
+            position: relative;
+        }
+        .dingdan ul li span{
+            float: left;
+            width: 0.7rem;
+            height: 0.9rem;
+            background: url(images/03.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 1.725rem;top:0.2rem ;
+        }
+        .dingdan ul li a{
+            font-size: 0.7rem;
+            color: #000;
+            float: left;
+            text-decoration: none;
+            position: absolute;
+            left: 3rem;top:0.345rem ;
+        }
+        .dingdan ul li:nth-child(1){
+            border-right: 1px solid #dcdcdc;
+            margin-top: 0.25rem;
+        }
+        .dingdan ul li:nth-child(2){
+            border-right: 1px solid #dcdcdc;
+            margin-top: 0.25rem;
+        }
+        .dingdan ul li:nth-child(2) span{
+            width: 0.975rem;
+            height: 0.9rem;
+            background: url(images/10.png) no-repeat;
+            background-size: 100%;
+        }
+        .dingdan ul li:nth-child(3) span{
+            top: 0.45rem;
+            width: 0.925rem;
+            height: 0.925rem;
+            background: url(images/11.png) no-repeat;
+            background-size: 100%;
+        }
+        .dingdan ul li:nth-child(3) a{
+            top: 0.575rem;
+        }
+
+        .list{
+            width: 18.75rem;
+            height: 3.275rem;
+            background: #fcfcfc;
+            margin-top: 0.575rem;
+        }
+        .list ul{
+            width: 18.75rem;
+            height: 3.275rem;
+        }
+        .list ul li{
+            width: 18.375rem;
+            height: 1.625rem;
+            margin-left: 0.375rem;
+            border-bottom: 1px solid #e4e4e4;
+            list-style: none;
+            overflow: hidden;
+        }
+        .list ul li a{
+            text-decoration: none;
+            font-size: 0.575rem;
+            color: #585858;
+            width: 3.95rem;
+            height: 0.825rem;
+            background: #fff;
+            float: left;
+            padding-left: 0.175rem;
+            line-height: 0.825rem;
+            margin-left: 0.325rem;
+           margin-top: 0.4rem;
+        }
+        .list ul li span{
+            float: right;
+            width: 0.375rem;
+            height: 0.6rem;
+            background: url(images/04.png) no-repeat #fff;
+            background-size: 100%;
+            margin-top:0.325rem ;
+            margin-right: 0.35rem;
+        }
+        .sound{
+            width: 18.75rem;
+            height: 1.7rem;
+            background: #fcfcfc;
+            margin-top: 0.95rem;
+        }
+        .sound a{
+            text-decoration: none;
+            font-size: 0.575rem;
+            color: #585858;
+            width: 3.95rem;
+            height: 0.825rem;
+            background: #fff;
+            float: left;
+            padding-left: 0.175rem;
+            line-height: 0.825rem;
+            margin-left: 0.55rem;
+            margin-top: 0.4rem;
+        }
+        .sound span{
+            width: 1.975rem;
+            height:1.1rem ;
+            background: url(images/05.png) no-repeat #fff;
+            background-size:100% ;
+            float: right;
+            margin-top:0.325rem ;
+            margin-right: 0.35rem;
+        }
+        .main{
+            width: 18.75rem;
+            height: 6.575rem;
+            background: #fcfcfc;
+            margin-top: 0.725rem;
+        }
+        .main ul{
+            width: 18.75rem;
+            height: 3.275rem;
+        }
+        .main ul li{
+            width: 18.375rem;
+            height: 1.625rem;
+            margin-left: 0.375rem;
+            border-bottom: 1px solid #e4e4e4;
+            list-style: none;
+            overflow: hidden;
+        }
+        .main ul li a{
+            text-decoration: none;
+            font-size: 0.575rem;
+            color: #585858;
+            width: 3.95rem;
+            height: 0.825rem;
+            background: #fff;
+            float: left;
+            padding-left: 0.175rem;
+            line-height: 0.825rem;
+            margin-left: 0.325rem;
+            margin-top: 0.4rem;
+        }
+        .main ul li span{
+            float: right;
+            width: 0.375rem;
+            height: 0.6rem;
+            background: url(images/04.png) no-repeat #fff;
+            background-size: 100%;
+            margin-top:0.325rem ;
+            margin-right: 0.35rem;
+        }
+        .main ul li:nth-child(1) a{
+            background: #fcfcfc;
+        }
+        footer{
+            margin-top: 5.225rem;
+            width: 18.75rem;
+            height: 2.4rem;
+            border-top: 5px solid #d2d2d9;
+            background: #fff;
+        }
+        footer ul{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        footer ul li{
+            width: 4.6875rem;
+            height: 2.4rem;
+            list-style: none;
+            float: left;
+            text-align: center;
+        }
+        footer ul li span{
+            width: 1.025rem;
+            height: 1.05rem;
+            background: url(images/06.png) no-repeat;
+            background-size: 100%;
+            display: block;
+            margin-top: 0.325rem;
+            margin-left: 1.825rem;
+        }
+        footer ul li a{
+            font-size: 0.575rem;
+            text-decoration: none;
+            color: #545454;
+
+        }
+        footer ul li:nth-child(2) span{
+            width: 1.1rem;
+            height: 0.925rem;
+            background: url(images/07.png) no-repeat;
+            background-size: 100%;
+        }
+        footer ul li:nth-child(3) span{
+            width: 1.05rem;
+            height: 1.025rem;
+            background: url(images/08.png) no-repeat;
+            background-size: 100%;
+        }
+        footer ul li:nth-child(4) span{
+            width: 1.075rem;
+            height: 1.075rem;
+            background: url(images/09.png) no-repeat;
+            background-size: 100%;
+        }
+
+    </style>
+    <script>
+        (function(win,doc){
+            var rem=20/375*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.onresize=function(){
+                var rem=20/375*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';
+            }
+        })(window,document);
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header class="banner">
+        <span><a href="javascript:;"></a></span>
+        <a href="javascript:;">返回</a>
+        <h1>个人中心</h1>
+    </header>
+    <section class="ziliao">
+        <img src="images/02.png" />
+    </section>
+    <section class="dingdan">
+        <ul>
+            <li>
+                <span></span>
+                <a href="javascript:;">订单</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="javascript:;">收藏</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="javascript:;">推荐</a>
+            </li>
+        </ul>
+    </section>
+    <section class="list">
+        <ul>
+            <li>
+                <a href="javascript:;">修改个人资料</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="javascript:;">修改密码</a>
+                <span></span>
+            </li>
+        </ul>
+    </section>
+    <section class="sound">
+        <a href="javascript:;">修改个人资料</a>
+        <span></span>
+    </section>
+    <section class="main">
+        <ul>
+            <li>
+                <a href="javascript:;">猜你喜欢</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="javascript:;">附近热门</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="javascript:;">推荐商家</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="javascript:;">设置</a>
+                <span></span>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <span></span>
+                <p><a href="javascript:;">首页</a></p>
+            </li>
+            <li>
+                <span></span>
+                <p><a href="javascript:;">商家</a></p>
+            </li>
+            <li>
+                <span></span>
+                <p><a href="javascript:;">购物车</a></p>
+            </li>
+            <li>
+                <span></span>
+                <p><a href="javascript:;">个人中心</a></p>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

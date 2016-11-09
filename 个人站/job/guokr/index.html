@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1"/>
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        html{font-size: 20px;}
+        .banner{
+            width: 16rem;
+            height: 2.325rem;
+            background:#262626 ;
+            border-bottom: 5px solid #4bccae;
+            position: relative;
+        }
+        .banner a:nth-child(1){
+            display: block;
+            width: 1.45rem;
+            height: 1.175rem;
+            background: url(images/01.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top:0.525rem ;left: 0.4rem;
+        }
+        .banner a:nth-child(2){
+            text-decoration: none;
+            font-size:0.975rem ;
+            color:#fdfdfd ;
+            position: absolute;
+            left:4.85rem ;top: 0.7rem;
+        }
+        .banner a:nth-child(3){
+            width: 1.45rem;
+            height: 1.15rem;
+            display: block;
+            background: url(images/02.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left:14.15rem ;top: 0.525rem;
+        }
+        .add{
+            width: 16rem;
+            height: 2.075rem;
+        }
+        .add ul{
+            width:16rem ;
+            height: 2.075rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .add ul li{
+            float: left;
+            width: 8rem;
+            height: 2.075rem;
+            position: relative;
+            list-style: none;
+        }
+        .add ul li span{
+            display: block;
+            width: 1.45rem;
+            height: 1.45rem;
+            background: url(images/03.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 1.45rem;top:0.425rem ;
+        }
+        .add ul li a{
+            font-size: 0.75rem;
+            color:#909090 ;
+            text-decoration: none;
+            position: absolute;
+            left: 3.375rem;top: 0.65rem;
+            border-right: 2px solid #c4c4c4;
+            padding-right: 1.45rem;
+        }
+        .add ul li:nth-child(2) a{
+            border-right: none;
+        }
+        .list{
+            width: 16rem;
+            height: 22.225rem;
+        }
+        .list img{
+            width: 16rem;
+            height: 7.8rem;
+        }
+        .list ul{
+            width: 16rem;
+
+            border-bottom: 4px solid #57c0af;
+
+        }
+        .list ul li{
+            width: 15.2rem;
+            height:2.05rem ;
+            border-bottom: 2px solid #efefef;
+            margin: 0 auto;
+          line-height: 2.05rem;
+        }
+        .list ul li a{
+            text-decoration: none;
+            color: #3d3d3d;
+            font-size:0.75rem ;
+            margin-left: 0.35rem;
+        }
+        .list ul li:nth-child(7){
+            border-bottom: none;
+        }
+        .content{
+            width: 16rem;
+            height: 18.925rem;
+            margin-top: 1.1rem;
+            margin-bottom: 6rem;
+        }
+        .content .tit{
+            height: 2.05rem;
+            width: 16rem;
+            background: #fafafa;
+            border-bottom: 2px solid #e2e2e2;
+            line-height: 2.05rem;
+            overflow: hidden;
+        }
+        .content .tit h2{
+            float: left;
+            font-size: 0.75rem;
+            color: #000;
+            margin-left: 0.775rem;
+        }
+        .content .tit span{
+           float: right;
+            width:1.45rem ;
+            height: 1.45rem;
+            background: url(images/05.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.15rem;
+            margin-right:0.75rem ;
+        }
+        .content ul{
+            width: 16rem;
+            height: 2.1rem;
+            border-bottom: 2px solid #ececec;
+
+        }
+        .content ul li{
+            width: 3.1rem;
+            height: 2.1rem;
+            float: left;
+
+            list-style: none;
+            line-height: 2.1rem;
+            text-align: center;
+
+        }
+        .content ul li a{
+            font-size:0.75rem ;
+            color: #000;
+            text-decoration: none;
+        }
+        .content ul li:nth-child(1){
+            border-bottom: 4px solid #dc3d5b;
+        }
+        .content ol{
+            width: 16rem;
+            border-bottom: 4px solid #57c0af;
+        }
+        .content ol li:nth-child(1){
+            margin: 0.625rem auto;
+            width: 15.225rem;
+            height: 6.675rem;
+            list-style: none;
+
+            border-bottom: 2px solid #ececec;
+        }
+        .content ol li:nth-child(1) a{
+            text-decoration: none;
+            font-size: 0.75rem;
+            color: #3d3d3d;
+            margin-left: 0.35rem;
+        }
+        .content ol li:nth-child(1) div{
+            width: 15.225rem;
+            overflow: hidden;
+            margin-top: 0.625rem;
+        }
+        .content ol li:nth-child(1) img{
+            float: left;
+            width: 5.175rem;
+            height: 3.7rem;
+            background-size:100%;
+
+            margin-left: 0.325rem;
+        }
+        .content ol li:nth-child(1) span{
+            width: 8.375rem;
+            float: left;
+            font-size:0.65rem ;
+            color: #919191;
+            margin-left: 0.675rem;
+            line-height: 1.275rem;
+        }
+        .content ol li{
+            margin: 0.625rem auto;
+            width: 15.225rem;
+            height: 1.9rem;
+            list-style: none;
+
+            border-bottom: 2px solid #ececec;
+        }
+        .content ol li a{
+            text-decoration: none;
+            font-size: 0.75rem;
+            color:#3d3d3d ;
+            margin-left: 0.35rem;
+        }
+        .content ol li:nth-child(6){
+            border-bottom: none;
+            margin-bottom: -0.1rem;
+        }
+        section:nth-child(3) ol{
+            border-bottom:none;
+        }
+        .content:nth-child(2) ol{
+            border-bottom: 2px solid #e3e3e3;
+        }
+        .main{
+            width: 16rem;
+            height: 18.925rem;
+            margin-top: 1.1rem;
+            margin-bottom: 6rem;
+        }
+        .main .tit{
+            height: 2.05rem;
+            width: 16rem;
+            background: #fafafa;
+            border-bottom: 2px solid #e2e2e2;
+            line-height: 2.05rem;
+            overflow: hidden;
+        }
+        .main .tit h2{
+            float: left;
+            font-size: 0.75rem;
+            color: #000;
+            margin-left: 0.775rem;
+        }
+        .main .tit span{
+            float: right;
+            width:1.45rem ;
+            height: 1.45rem;
+            background: url(images/05.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.15rem;
+            margin-right:0.75rem ;
+        }
+        .main ul{
+            width: 16rem;
+            height: 2.1rem;
+            border-bottom: 2px solid #ececec;
+
+        }
+        .main ul li{
+            width: 3.1rem;
+            height: 2.1rem;
+            float: left;
+
+            list-style: none;
+            line-height: 2.1rem;
+            text-align: center;
+
+        }
+        .main ul li a{
+            font-size:0.75rem ;
+            color: #000;
+            text-decoration: none;
+        }
+        .main ul li:nth-child(1){
+            border-bottom: 4px solid #dc3d5b;
+        }
+        .main ol{
+            width: 16rem;
+            border-bottom: 2px solid #e3e3e3;
+        }
+        .main ol li:nth-child(1){
+            margin: 0.625rem auto;
+            width: 15.225rem;
+            height: 6.675rem;
+            list-style: none;
+
+            border-bottom: 2px solid #ececec;
+        }
+        .main ol li:nth-child(1) a{
+            text-decoration: none;
+            font-size: 0.75rem;
+            color: #3d3d3d;
+            margin-left: 0.35rem;
+        }
+        .main ol li:nth-child(1) div{
+            width: 15.225rem;
+            overflow: hidden;
+            margin-top: 0.625rem;
+        }
+        .main ol li:nth-child(1) img{
+            float: left;
+            width: 5.175rem;
+            height: 3.7rem;
+            background-size:100%;
+
+            margin-left: 0.325rem;
+        }
+        .main ol li:nth-child(1) span{
+            width: 8.375rem;
+            float: left;
+            font-size:0.65rem ;
+            color: #919191;
+            margin-left: 0.675rem;
+            line-height: 1.275rem;
+        }
+        .main ol li{
+            margin: 0.625rem auto;
+            width: 15.225rem;
+            height: 1.9rem;
+            list-style: none;
+
+            border-bottom: 2px solid #ececec;
+        }
+        .main ol li a{
+            text-decoration: none;
+            font-size: 0.75rem;
+            color:#3d3d3d ;
+            margin-left: 0.35rem;
+        }
+        .main ol li:nth-child(6){
+            border-bottom: none;
+            margin-bottom: -0.1rem;
+        }
+
+        .bottom{
+            width: 16rem;
+            height: 3.1rem;
+            background: #fafafa;
+           position: relative;
+            border-bottom: 4px solid #4dcaa8;
+        }
+        .bottom a{
+
+            width: 1.45rem;
+            height: 1.45rem;
+            background: url(images/07.png) no-repeat;
+            background-size:100% ;
+            position: absolute;
+            left:5.5rem ;top:0.9rem;
+        }
+        .bottom span{
+            font-size: 0.75rem;
+            color: #3d3d3d;
+            position: absolute;
+            top: 1.125rem;left: 7.375rem;
+        }
+        footer{
+            width: 16rem;
+            height: 3.75rem;
+            background: #262626;
+        }
+        footer ul{
+            width: 16rem;
+            height: 3.75rem;
+
+
+        }
+        footer ul li:nth-child(1){
+            width: 8rem;
+            height: 1.9rem;
+            float: left;
+            list-style: none;
+            position: relative;
+            border-right: 1px solid #666666;
+            margin: 0.875rem auto;
+        }
+        footer ul li:nth-child(1) span{
+
+            width: 1.45rem;
+            height: 1.15rem;
+            background: url(images/02.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top:0.525rem ;left:2.05rem;
+        }
+        footer ul li:nth-child(1) a{
+            text-decoration: none;
+            color: #bababa;
+            font-size:0.725rem ;
+            position: absolute;
+            left: 4.1rem;top: 0.625rem;
+
+        }
+        footer ul li:nth-child(2){
+            width: 8rem;
+            height: 1.9rem;
+            float: left;
+            list-style: none;
+            position: relative;
+            margin: 0.875rem auto;
+            margin-right: -1rem;
+        }
+        footer ul li:nth-child(2) span{
+
+            width: 0.65rem;
+            height: 1.15rem;
+            background: url(images/09.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top:0.525rem ;left:1.75rem;
+        }
+        footer ul li:nth-child(2) a{
+            text-decoration: none;
+            color: #bababa;
+            font-size:0.725rem ;
+            position: absolute;
+            left: 3rem;top: 0.625rem;
+
+        }
+    </style>
+    <script>
+        (function(doc,win){
+            var rem=20/320*doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=rem+'px';
+            win.onresize=function(){
+                var rem=20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize=rem+'px';
+            }
+        })(document,window);
+    </script>
+</head>
+<body>
+<header class="banner">
+    <a href="javascript:;"></a>
+    <a href="javascript:;">Guokr.com</a>
+    <a href="javascript:;"></a>
+</header>
+<section class="add">
+    <ul>
+        <li>
+            <span></span>
+            <a href="javascript:;">用户登录</a>
+        </li>
+        <li>
+            <span></span>
+            <a href="javascript:;">用户登录</a>
+        </li>
+    </ul>
+</section>
+<section class="list">
+    <img src="images/04.png " />
+    <ul>
+        <li><a href="javascript:;">解读科学观点时，你应该知道的20个...</a> </li>
+        <li><a href="javascript:;">运动出点汗，更好来谈判</a> </li>
+        <li><a href="javascript:;">“关掉”旧习惯，本性不难移</a> </li>
+        <li><a href="javascript:;">男女搭配，破案不累</a> </li>
+        <li><a href="javascript:;">腰窝，性感无误？</a> </li>
+        <li><a href="javascript:;">有7000多种语言，就有7000多个“平行...</a> </li>
+        <li><a href="javascript:;">久坐杀精— —今天，你坐了多久了？</a> </li>
+    </ul>
+</section>
+<section class="content">
+    <div class="tit">
+        <h2>热门问答</h2>
+        <span></span>
+    </div>
+    <ul>
+        <li><a href="javascript:;">科技</a> </li>
+        <li><a href="javascript:;">生活</a> </li>
+        <li><a href="javascript:;">人文</a> </li>
+        <li><a href="javascript:;">自然</a> </li>
+    </ul>
+
+    <ol>
+        <li>
+            <a href="javascript:;">如果把探测器撞到彗星上会怎么样？</a>
+            <div>
+                <img src="images/06.png" />
+                <span>撞上去的事情人类已经干过啦。。深度撞击号(英语：Deep Impact) 是美国国家</span>
+            </div>
+        </li>
+        <li><a href="javascript:;">这个“肥皂放入牛奶”的效果怎么生产...</a> </li>
+        <li><a href="javascript:;">制造出大于全画幅的感光元件有意义吗？</a> </li>
+        <li><a href="javascript:;">制造出大于全画幅的感光元件有意义吗？</a> </li>
+        <li><a href="javascript:;">磁场是运动的电场吗？</a> </li>
+        <li><a href="javascript:;">什么函数能描述你的人生？</a> </li>
+    </ol>
+</section>
+<section class="main">
+    <div class="tit">
+        <h2>热门问答</h2>
+        <span></span>
+    </div>
+    <ul>
+        <li><a href="javascript:;">科技</a> </li>
+        <li><a href="javascript:;">生活</a> </li>
+        <li><a href="javascript:;">人文</a> </li>
+        <li><a href="javascript:;">自然</a> </li>
+    </ul>
+
+    <ol>
+        <li>
+            <a href="javascript:;">如果把探测器撞到彗星上会怎么样？</a>
+            <div>
+                <img src="images/06.png" />
+                <span>撞上去的事情人类已经干过啦。。深度撞击号(英语：Deep Impact) 是美国国家</span>
+            </div>
+        </li>
+        <li><a href="javascript:;">这个“肥皂放入牛奶”的效果怎么生产...</a> </li>
+        <li><a href="javascript:;">制造出大于全画幅的感光元件有意义吗？</a> </li>
+        <li><a href="javascript:;">制造出大于全画幅的感光元件有意义吗？</a> </li>
+        <li><a href="javascript:;">磁场是运动的电场吗？</a> </li>
+        <li><a href="javascript:;">什么函数能描述你的人生？</a> </li>
+    </ol>
+</section>
+
+<section class="bottom">
+    <a href="javascript:;"></a>
+    <span>回到顶部</span>
+</section>
+<footer>
+    <ul>
+        <li>
+            <span></span>
+            <a href="javascript:;">PC端</a>
+        </li>
+        <li>
+            <span></span>
+            <a href="javascript:;">手机端</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

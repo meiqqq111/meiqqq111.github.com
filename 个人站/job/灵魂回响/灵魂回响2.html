@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../css/base.css" rel="stylesheet" />
+<style>
+	.box{ width:1007px; height:50px; margin:0 auto; background:#f2f2f2;}
+	h1{ width:90px; height:38px; background:url(../img/01-1.png) no-repeat; text-indent:-999em; margin-left:18px; margin-bottom:8px; border-right:1px solid #cecece; padding-right:13px;}
+	.box li{ float:right;}
+	.clearfix:after{ display:block; content:''; clear:both;}
+	.clearfix{ zoom:1;}
+	.box ul{ position:relative;}
+	.box a{ font-size:12px; color:#333;position:relative;}
+	
+	.box .li6{  position:absolute; left:490px; top:-25px; }
+	.box .c1{ width:24px; height:24px; background:url(../img/cyou_sprite.png) no-repeat -139px 0; position:absolute; left:-33px; top:-5px;}
+	.box .li5{  position:absolute; left:570px; top:-25px; }
+	.box .c2{ width:24px; height:24px; background:url(../img/cyou_sprite.png) no-repeat -189px 0; position:absolute; left:-33px; top:-5px;}
+	.box .li4{  position:absolute; left:643px; top:-25px;border-right:1px solid #cecece; padding-right:9px;  }
+	.box .c3{ width:24px; height:24px; background:url(../img/cyou_sprite.png) no-repeat 0 -104px; position:absolute; left:-33px; top:-5px; }
+	.box .li3{  position:absolute; left:714px; top:-25px; }
+	.box .c4{ width:10px; height:10px; background:url(../img/cyou_sprite.png) no-repeat -206px -148px; position:absolute; left:30px; top:5px;border-right:1px solid #cecece; padding-right:9px; }
+	.box .li2{  position:absolute; left:794px; top:-25px; }
+	.box .c5{ width:10px; height:10px; background:url(../img/cyou_sprite.png) no-repeat -206px -148px; position:absolute; left:65px; top:5px;border-right:1px solid #cecece; padding-right:9px; }
+	.box .li1{  position:absolute; left:907px; top:-25px; }
+	.box .c6{ width:10px; height:10px; background:url(../img/cyou_sprite.png) no-repeat -206px -148px; position:absolute; left:65px; top:5px;border-right:1px solid #cecece; padding-right:9px; }
+	.box-1{ background:url(../img/01-2.png) repeat-y; width:1007px; height:5px;} 
+	.con{ width:1007px; margin:0 auto; }
+	.con-1{background:url(../img/02-3.png); width:1007px; height:551px; position:relative; }
+	.con-1 h2{ width:189px; height:90px; background:url(../img/logo.gif); text-indent:-999em; margin-left:6px; float:left; }
+	.con-1 ul{ float:left; margin-top:36px; margin-left:50px;}
+	.con-1 ul li{ float:left; margin-right:22px;}
+	.con-1 li a{ font-size:15px; color:#c9d5fd; font-weight:bold;}
+	.con-1 p{ text-align:center; color:#c9d5fd;}
+	.con-2{  font-size:20px; color:#fdfdff; font-weight:bold; text-align:center;border:1px solid #b3462f; width:28px; height:118px; background:#a32e0d; position:absolute;top:245px; left:0;}
+	.con2{ background:url(../img/content.jpg) repeat-y; height:1911px;   }
+	.con2 .con2-11 li{ float:left; }
+	.con2 .con2-1{ font-size:34px; color:#fbffff; font-weight:bold; background:url(../img/01-3.png) no-repeat; width:215px; height:108px; text-align:center;padding-top:34px; }
+	.con2 .con2-2{ font-size:12px; color:#6f79b4; font-weight:bold; background:url(../img/02-4.png) no-repeat; width:100px; height:109px; text-align:center; padding-top:64px;}
+	.con2 .con2-3{ font-size:12px; color:#6f79b4; font-weight:bold; background:url(../img/01-4.png) no-repeat; width:100px; height:109px; text-align:center; padding-top:64px;}
+	.con2 .con2-4{ font-size:12px; color:#6f79b4; font-weight:bold; background:url(../img/01-5.png) no-repeat; width:100px; height:109px; text-align:center; padding-top:64px;}
+	.con2 .con2-5{ font-size:12px; color:#6f79b4; font-weight:bold; background:url(../img/01-6.png) no-repeat; width:100px; height:109px; text-align:center; padding-top:64px;}
+	.con2-11{ float:left;}
+	.con2-0{ float:left;}
+	.con2-6{ font-size:12px; color:#a6b2d7; font-weight:bold; background:url(../img/01-8.png) no-repeat; width:357px; height:55px; margin-left:15px; }
+	.con2-6 .p1{ margin-top:0px; margin-left:80px;}
+	.con2-6 .p2{ margin-left:80px; margin-top:19px;}
+	.con2-7{ font-size:12px; color:#adb9e0; font-weight:bold; background:url(../img/01-7.png) no-repeat; width:383px; height:43px; padding-top:14px; padding-left:4px;}
+	.con2-7 p{ position:relative;}
+	.con2-01{ width:14px; height:14px; background:url(../img/01-9.png) no-repeat; position:absolute; left:155px; top:0px; }
+	.con2-02{ margin-left:50px;  }
+	.con2-03{ width:27px; height:24px;background:url(../img/01-10.png) no-repeat; position:absolute; left:248px; top:0px;}
+	.con2-04{ width:27px; height:24px;background:url(../img/01-11.png) no-repeat; position:absolute; left:295px; top:0px;}
+	.con2-05{ width:27px; height:24px;background:url(../img/01-12.png) no-repeat; position:absolute; left:345px; top:0px;}
+	.con2 .con3{ width:616px; height:303px; margin-top:-64px; position: relative; }
+    .con3 img{width: 100%;height: 100%; position: absolute;left: 0;top: 0; display: none; float: left;}
+	.con3 .con3-1{ font-size:15px; color:#0eacbd; font-weight:bold;  border:1px solid #3e4661; background:url(../img/01-14.png) no-repeat 0 10px #272c3e; margin-right:5px; border-radius:10px 10px; padding:5px;}
+	.con3 .con3-2{ font-size:15px; color:#0eacbd; font-weight:bold;  border:1px solid #3e4661; background:#272c3e;  border-radius:10px 10px; padding:5px; position:relative; left:-47px; top:83px;}
+	.con4{ float:right; position:relative; left:-10px; top:-303px; background:url(../img/01-15.png); width:380px; height:303px;}
+	.con4 .con4-0 li{ float:left; text-align:center; padding:22px 0 0 34px; margin-right:30px; margin-bottom:39px;}
+	.con4 .con4-1{ width:400px; height:34px; background:url(../img/01-16.png) no-repeat; font-size:16px; color:#fe4100; padding-top:10px; padding-left:35px;}
+	.con4 .con4-2 li{ font-size:14px; color:#919abb; line-height:21px; margin-left:24px; }
+	.con4 .con4-01{font-size:14px; color:#919abb; margin-left:250px; margin-top:20px; }
+	.con4 .con4-01 span{width:15px; height:15px; background:url(../img/01-17.png) no-repeat; position:relative; left:0; top:0;}
+	.con5{ margin-top:33px; width:100%; }
+	.con5 ul{ margin-right:-8px;}
+	.con5 li{ float:left; margin-right:8px; }
+	.fl{ float:left;}
+	.fr{ float:right;}
+	.con5-01{ position:relative; left:504px; top:-130px;} 
+	.con5-02{ position:relative; left:506px; top:-130px;} 
+	.con6 .left{ width:601px;}
+	.con6{ margin-top:-98px;}
+	.left ul{background:url(../img/01-20.png) no-repeat 0 36px; width:658px; height:60px; padding-top:38px;}
+	.left li{ float:left; margin-right:60px; margin-left:20px; }
+	.left li a{ font-size:16px; color:#f9f9f9;}
+	.left img{ display:block; padding-top:-40px;}
+	.right{ position:relative; left:658px; top:-330px; }
+	.right h2{ font-size:18px; color:#f3ca90; margin-left:60px; position:relative;}
+	.right h2 span{ width:30px; height:30px; background:url(../img/01-21.png) no-repeat; position:absolute; left:-40px; top:-10px;}
+	.right-1{ margin-left:20px; margin-top:20px; position:relative;}
+	.right-2{ width:322px; height:37px; background:#000; margin-left:20px; position:absolute;left:0; bottom:1195px; opacity:0.4; filter:alpha( opacity=40);}
+	.right-3{ margin-left:20px; font-size:12px; color:#f5f4f4; position:absolute; left:5px; bottom:1200px;}
+	.right-4{ margin-left:20px; margin-top:11px;}
+	.right-4 li{ background:url(../img/01-23.png) no-repeat; line-height:30px;}
+	.right-4 li a{ margin-left:27px; }
+	.right-4 li span{ text-align:right; margin-left:42px;}
+	.right-4 .right-5{ margin-left:163px;}
+	.right-4 .right-6{ margin-left:121px;}
+	.box1{ margin-left:-650px; margin-top:33px;}
+	.box1 h2 a{ font-size:15px; color:#f3ca90; }
+	.box1 .box1-1{ width:215px;  background:url(../img/01-24.png) no-repeat; padding-top:15px; padding-bottom:24px;}
+	.box1 .box1-1 a{ font-size:14px; color:#9587ab; margin-left:22px; text-align:left; margin-top:20px; line-height:29px;}
+	.box1 .box1-2{ margin-top:23px;}
+	.box1-2 .box1-3{ width:206px; height:36px; background:url(../img/01-27.png) no-repeat; font-size:16px; color:#b1a1ca;padding-left:43px; padding-top:10px; margin-top:5px;}
+	.box2 h4{ position:relative; margin-left:30px; font-size:19px; color:#f3ca90;}
+	.box2 span{ width:38px; height:26px; background:url(../img/01-29.png) no-repeat; position:absolute; left:-417px; top:350px;}
+	.box2{ margin-left:-10px;}
+	.box2 .box2-0{ margin-bottom:44px; }
+	.box2 .box2-1{ width:424px; height:305px; background:url(../img/01-28.png) no-repeat; margin-top:14px; padding-left:8px;}
+	.box2 .box2-1 li{ margin-left:0px; padding-right:25px; padding-left:25px;line-height:47px; border-right:1px solid #433b4f;border-top:1px solid #433b4f;  }
+	.box2 .box2-2 .box2-3 li{ border:none;}
+	.box2 .box2-2 .box2-3{ position:relative;}
+	.box2 .box2-2{ margin-left:-50px;}
+	.box2-1 .box2-4{ padding-top:70px; padding-left:16px;}
+	.box2-1 .box2-3 span{ width:14px; height:14px; background:url(../img/01-33.png) no-repeat; position:absolute; left:-85px; top:410px;}
+	.box2-1 .box2-5{ margin-top:-200px; margin-left:115px;}
+	.box2-1 .box2-5 li{ border:none; line-height:25px;}
+	.box3 .box3-1 h5{ position:relative; left:50px;} 
+	.box3 .box3-1 h5 a{ font-size:19px; color:#f2c27e;}
+	.box3 .box3-1 span{ width:25px; height:28px; background:url(../img/01-34.png) no-repeat; position:absolute; left:650px; top:0;}
+	.box3 .box3-1 .box3-2{ margin-top:}
+	.box3 .box3-1 .box3-0{ background:url(../img/01-35.png) no-repeat; margin-left:670px; margin-top:16px; }
+	.box3 .box3-2 .box3-3{ margin-right:18px; margin-left:20px; width:78px; height:26px; background:url(../img/01-36.png) no-repeat; padding-left:7px; padding-top:7px;}
+	.box3 .box3-2 ul{ padding-top:30px;}
+	.box3 .box3-2 .box3-3 a{ font-size:14px; color:#fff; padding-top:-10px;}
+	.box3 .box3-2 li a{ font-size:14px; color:#9587ab;}
+	.box3 .box3-2{ }
+	.box3 .box3-4{ margin-top:-650px; margin-left:20px;}
+	.box3 .box3-4 .box3-5 a{ font-size:14px; color:#fff; padding-top:-10px;}
+	.box3 .box3-4 .box3-5{ width:78px; height:26px; background:url(../img/01-36.png) no-repeat; padding-left:7px; padding-top:7px;margin-right:18px;}
+	.box3 .box3-4 li a{ font-size:14px; color:#9587ab;}
+	.box3 .box3-6{ margin-top:-600px; margin-left:20px;}
+	.box3 .box3-6 .box3-7 a{ font-size:14px; color:#fff; padding-top:-10px;}
+	.box3 .box3-6 .box3-7{ width:78px; height:26px; background:url(../img/01-36.png) no-repeat; padding-left:7px; padding-top:7px;margin-right:18px;}
+	.box3 .box3-6 li a{ font-size:14px; color:#9587ab;}
+	.box3 .box3-8{ margin-top:-550px; margin-left:20px;}
+	.box3 .box3-8 .box3-9 a{ font-size:14px; color:#fff; padding-top:-10px;}
+	.box3 .box3-8 .box3-9{ width:78px; height:26px; background:url(../img/01-36.png) no-repeat; padding-left:7px; padding-top:7px;margin-right:18px;}
+	.box3 .box3-8 li a{ font-size:14px; color:#9587ab;}
+	.box3 .box3-10{ margin-top:-484px; width:284px; height:45px; background:url(../img/01-37.png) no-repeat; padding-bottom:20px; margin-left:17px;}
+	.box3 .box3-10 a{ font-size:20px; color:#b1a1ca; font-weight:bold; margin-left:83px; line-height:45px;} 
+	.box4{ margin-top:39px;}
+	.box4 h6{ margin-left:50px; }
+	
+	.box4 h6 a{ margin-left:50px; font-size:20px; color:#f3ca90;}
+	.box4 h6 span{ width:32px; height:32px; background:url(../img/01-38.png) no-repeat; position:absolute; left:0px; top:730px; margin-left:25px; margin-right:20px;}
+	.box4 .box4-1{ margin-top:21px; background:url(../img/01-39.png) no-repeat; margin-left:670px; width:322px;}
+	.box4 .box4-1 li{ border-right:1px solid #433b4f; line-height:25px; padding-right:25px; margin-left:18px;}
+	.box4 .box4-1 li a{ font-size:15px; color:#685f76;}
+	.box4 .box4-2 li{ margin-top:30px; border:none; margin-right:-24px;}
+	.box5{ margin-top:25px; margin-left:50px;}
+	.box5 .box5-1{width:348px; height:1px; background:#908c9b; margin-top:6px; margin-right:4px; }
+	.box5 .box5-2{ width:29px; height:10px; background:url(../img/01-42.png) no-repeat; margin-right:16px;}
+	.box5 a{ font-size:17px; color:#908c9b; margin-right:16px;}
+	.box5 .box5-3{ width:29px; height:10px; background:url(../img/01-42.png) no-repeat; margin-right:4px;}
+	.box5 .box5-4{width:348px; height:1px; background:#908c9b; margin-top:6px; }
+	.box6{ margin-top:23px; margin-left:53px; font-size:16px; color:#908c9b;}
+	.box7{ font-size:16px; color:#7f7b89; margin-top:16px; margin-left:171px;}
+	.box8{ width:1007px; height:10px; background:url(../img/01-44.png) repeat-y; margin-left:-8px; margin-top:40px;}
+	.box9{ margin-left:-8px;}
+    #btn{ position: absolute;right: 0;bottom: 0;}
+    #btn li{width: 20px;line-height: 20px; text-align:center;color: #000;background: #ccc; float: left; margin: 10px;cursor:pointer;}
+    #btn .on{color: #fff;background: #F60}
+</style>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var oBox = $('.con3');
+            var oUl1 = $('#ul1');
+            var oOl1 = $('#ol1');
+            var aLi2 = $('#ul1 li');
+            var aLi = $('#btn li');
+            var n = 0;
+            var timer = null;
+            oUl1.innerHTML+=oUl1.innerHTML;
+            oUl1.width($('#ul1 li').eq(1).width()*$('#ul1 li').length);
+            function tab(){
+                aLi.removeClass('on');
+                aLi.eq(n).addClass('on');
+                oUl1.stop().animate({
+                    left:-n*aLi2.eq(1).width()
+                });
+            }
+            aLi.click(function(){
+                n=$(this).index();
+                tab();
+            });
+            function timertab(){
+                timer=setInterval(function(){
+                    n++;
+                    if(n==5){
+                        n=0;
+                        oUl1.css('left','0')
+                    }
+                    tab();
+                },1000)}
+            oBox.mouseover(function(){
+                clearInterval(timer);
+            });
+            oBox.mouseout(function(){
+                timertab();
+            });
+        });
+    </script>
+</head>
+
+<body>
+	
+	<div class="box">
+    	<h1>畅游</h1>
+        <ul class="clearfix">
+        <li class="li1"><a href="#"><span class="c6"></span>畅游全游戏</a></li>
+        <li class="li2"><a href="#"><span class="c5"></span>畅游全服务</a></li>
+        <li class="li3"><a href="#"><span class="c4"></span>客服</a></li>
+        <li class="li4"><a href="#"><span class="c3"></span>畅游+</a></li>
+        <li class="li5"><a href="#"><span class="c2"></span>充值</a></li>
+        <li class="li6"><a href="#"><span class="c1"></span>注册</a></li>
+        </ul>
+        <div class="box-1"></div>
+       
+    </div>
+    <div class="con clearfix">
+    	<div class="con-1 clearfix">
+        	<h2><a href="#">灵魂回响</a></h2>
+            <ul>
+            <li><a href="#">首页</a>
+            <p>HOME</p>
+            </li>
+            <li><a href="#">新闻公告</a>
+            <p>NEWS</p>
+            </li>
+            <li><a href="#">游戏特色</a>
+            <p>FEATURES</p>
+            </li>
+            <li><a href="#">新手指南</a>
+            <p>NEWBIE</p>
+            </li>
+            <li><a href="#">游戏下载</a>
+            <p>DOWNLOAO</p>
+            </li>
+            <li class="l"><a href="#">活动专区</a>
+            <p>ACTIVTY</p>
+            </li>
+            <li><a href="#">视觉欣赏</a>
+            <p>VIDEO & PICTURE</p>
+            </li>
+            <li><a href="#">玩家互动</a>
+            <p>INTERACTION</p>
+            </li>
+            <li><a href="#">客户服务</a>
+            <p>SERVICE</p>
+            </li>
+            </ul>
+            <div class="con-2">点赞赢豪礼</div>
+        </div>
+        <div class="con2">
+        <div class="clearfix">
+        <ul class=" con2-11 clearfix">
+        <li class="con2-1"><a href="#">游戏下载</a>
+        <p><a href="#">DOWNLOAD</a></p>
+        </li>
+        <li class="con2-2"><a href="#">账号注册</a></li>
+        <li class="con2-3"><a href="#">账号充值</a></li>
+        <li class="con2-4"><a href="#">兑换中心</a></li>
+        <li class="con2-5"><a href="#">新手指南</a></li>
+        </ul>
+        <ul class="con2-0">
+        	<li class="con2-6">
+            <p class="p1">电信一区 【元素殿堂】欢迎进驻！</p>
+            <p class="p2" >网通一区 【雷霆之怒】欢迎进驻！</p>
+            </li>
+            <li class="con2-7">
+            <p>距您上次访问有 200 条更新<span class="con2-01"></span><span class="con2-02">关注:</span><span class="con2-03"></span><span class="con2-04"></span><span class="con2-05"></span></p>
+            </li>
+        </ul>
+        
+        </div>
+        <div class="con3">
+            <span class="con3-1">官方</span><span class="con3-2">媒体</span>
+            <ul id="ul1" class="clearfix">
+                <li><img src="../img/01-13.png" alt="" style="display: block" /></li>
+                <li><img src="../img/01-18.png" alt="" /></li>
+                <li><img src="../img/01-13.png" alt="" /></li>
+                <li><img src="../img/01-18.png" alt="" /></li>
+            </ul>
+            <ol id="btn" class="clearfix">
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+        </div>
+        <div class="con4">
+        <ul class=" con4-0 clearfix">
+        <li><a href="#">综合</a></li>
+        <li><a href="#">综合</a></li>
+        <li><a href="#">综合</a></li>
+        <li><a href="#">综合</a></li>
+        </ul>
+        <div class="con4-1">4月8日大版开启 新职业术士魔神天降</div>
+        <ul class="con4-2">
+        <li>【新闻】决战开启！6月4日全新Raid本“暗黑城</li>
+        <li>【新闻】竞技场上线！进入PVP激斗时代！</li>
+        <li>【新闻】揭秘术士进化史 多张设计稿曝光</li>
+        <li>【新闻】两大满级副本特色揭秘 终极BOSS曝光</li>
+        <li>【新闻】新版4.8上线 全新竞技场玩法揭秘</li>
+        <li>【新闻】年度大版今日开启 新职业新战场震撼上</li>
+        <li ><a href="#" class="con4-01"><span></span>更多信息</a></li>
+        </ul>
+        </div>
+        <div class="con5">
+        <ul class="clearfix">
+        <li><img src="../img/01-18.png" alt="" /></li>
+         <li ><img src="../img/01-18.png" alt="" /></li>
+          <li class=" con5-01 fl"><img src="../img/01-18.png" alt="" /></li>
+          <li class=" con5-02"><img src="../img/01-18.png" alt="" /></li>
+        </ul>
+        </div>
+        <div class="con6">
+        	<div class="left">
+            <img src="../img/01-20.png" alt=""  class="img1"/>
+            <img src="../img/01-19.png" alt="" />
+            </div>
+            <div class="right">
+            <h2><span></span>活动中心</h2>
+            <div class="right-1"><img src="../img/01-22.png" alt="" /></div>
+            <div class="right-2"></div>
+            <div class="right-3">女武神的密宝</div>
+            <div class="right-4">
+            	<ul>
+                	<li class="clearfix"><a href="#">神谕者的成长礼</a><span class="right-5">进行中</span></li>
+                    <li class="clearfix"><a href="#">女神赐福助力成长，老友归来大礼相赠</a><span>进行中</span></li>
+                    <li class="clearfix"><a href="#">赫尔墨斯的宝库，尼凯亚大陆奇珍异宝</a><span>进行中</span></li>
+                    <li class="clearfix"><a href="#">绑定畅游+，送十格背包</a><span class="right-6">进行中</span></li>
+                </ul>
+            </div>
+            <div class="box1 clearfix">
+    	<div class="fl">
+        <ul>
+        	<li class="box1-1">
+            <h2><a href="#">快捷入口</a></h2>
+            <a href="#">·账号管理</a>
+             <a href="#">·兑换中心</a>
+              <a href="#">·账号安全</a>
+               <a href="#">·畅游知道</a>
+                <a href="#">·BUG提交</a>
+                 <a href="#">·客户端FAQ</a>
+                  <a href="#">·玩家社区</a>
+                   <a href="#">·加速器下载</a>
+            </li>
+            <li class="box1-2"><img src="../img/01-25.png" alt="" />
+            <p class="box1-3">媒体合作专区</p>
+            </li>
+            <li><img src="../img/01-26.png" alt="" /></li>
+        </ul>
+        </div>
+        <div class="box2 fl">
+        <ul>
+        <li class="box2-0"><span></span><h4>玩家交流</h4>
+        	<ul class="box2-1 clearfix">
+            <li class="box2-2 fl"><a href="#">玩家攻略</a></li>
+            <li class="fl"><a href="#">论坛热帖</a></li>
+            <li class="fl"><a href="#">社区精华</a></li>
+            <li class="box2-3 fl"><span></span><a href="#">更多信息 &gt;</a></li>
+            <div class="box2-4">
+            <img src="../img/01-30.png" alt="" />
+            </div>
+            <ul class="box2-5">
+            <li><a href="#">·生活技能之烹饪技能详细解读</a></li>
+             <li><a href="#">·称号：发现森林之秘 任务全程攻略</a></li>
+              <li><a href="#">·屌丝逆袭 大神成长计划开启</a></li>
+               <li><a href="#">·生活技能之烹饪技能详细解读</a></li>
+                <li><a href="#">·阻止科萨特复活【英雄】成就攻略！</a></li>
+                 <li><a href="#">·独家攻略！灵魂回响效率冲级攻略！</a></li>
+                  <li><a href="#">·灵魂回响生活技能玩法介绍(二)</a></li>
+                   <li><a href="#">·灵魂回响生活技能玩法介绍(一)</a></li>
+            </ul>
+            </ul>
+            
+        </li>
+        <li><span></span><h4>玩家交流</h4>
+        	<ul class="box2-1 clearfix">
+            <li class="box2-2 fl"><a href="#">玩家攻略</a></li>
+            <li class="fl"><a href="#">论坛热帖</a></li>
+            <li class="fl"><a href="#">社区精华</a></li>
+            <li class="box2-3 fl"><span></span><a href="#">更多信息 &gt;</a></li>
+            <div class="box2-4">
+            <img src="../img/01-30.png" alt="" />
+            </div>
+            <ul class="box2-5">
+            <li><a href="#">·生活技能之烹饪技能详细解读</a></li>
+             <li><a href="#">·称号：发现森林之秘 任务全程攻略</a></li>
+              <li><a href="#">·屌丝逆袭 大神成长计划开启</a></li>
+               <li><a href="#">·生活技能之烹饪技能详细解读</a></li>
+                <li><a href="#">·阻止科萨特复活【英雄】成就攻略！</a></li>
+                 <li><a href="#">·独家攻略！灵魂回响效率冲级攻略！</a></li>
+                  <li><a href="#">·灵魂回响生活技能玩法介绍(二)</a></li>
+                   <li><a href="#">·灵魂回响生活技能玩法介绍(一)</a></li>
+            </ul>
+            </ul>
+            
+        </li>
+        </ul>
+        </div>
+        <div class="box3">
+        	<ul >
+            <li class="box3-1">
+            	<h5><span></span><a href="#">游戏资料</a></h5>
+                <ul class="box3-0">
+                <li class="box3-2">
+                <ul class="clearfix">
+                <li class="box3-3 fl"><a href="#">新手入门</a></li>
+                <li class="fl"><a href="#">注册账号|</a></li>
+                <li class="fl"><a href="#">下载游戏|</a></li>
+                <li class="fl"><a href="#">登陆游戏</a></li>
+                </ul>
+                </li>
+                <li class="box3-4">
+                <ul class="clearfix">
+                <li class="box3-5 fl"><a href="#">新手入门</a></li>
+                <li class="fl"><a href="#">注册账号|</a></li>
+                <li class="fl"><a href="#">下载游戏|</a></li>
+                <li class="fl"><a href="#">登陆游戏</a></li>
+                </ul>
+                </li>
+                <li class="box3-6">
+                <ul class="clearfix">
+                <li class="box3-7 fl"><a href="#">新手入门</a></li>
+                <li class="fl"><a href="#">注册账号|</a></li>
+                <li class="fl"><a href="#">下载游戏|</a></li>
+                <li class="fl"><a href="#">登陆游戏</a></li>
+                </ul>
+                </li>
+                <li class="box3-8">
+                <ul class="clearfix">
+                <li class="box3-9 fl"><a href="#">新手入门</a></li>
+                <li class="fl"><a href="#">注册账号|</a></li>
+                <li class="fl"><a href="#">下载游戏|</a></li>
+                <li class="fl"><a href="#">登陆游戏</a></li>
+                </ul>
+                </li>
+                <li class="box3-10"><a href="#">进入资料站</a></li>
+                </ul>
+            </li>
+            <li class="box4">
+            <h6><span></span><a href="#">视觉欣赏</a></h6>
+            <ul class="box4-1 clearfix">
+            <li class="fl"><a href="#">游戏视频</a></li>
+            <li class="fl"><a href="#">游戏截图</a></li>
+            <li class="fl"><a href="#">更多信息</a></li>
+            <ul class="box4-2 clearfix">
+            <li class="fl"><img src="../img/01-40.png" alt="" /></li>
+              <li class="fl"><img src="../img/01-40.png" alt="" /></li>
+                <li class="fl"><img src="../img/01-40.png" alt="" /></li>
+                  <li class="fl"><img src="../img/01-40.png" alt="" /></li>
+            </ul>
+            </ul>
+            
+            </li>
+            </ul>
+        </div>
+        <p class="box5 clearfix"><span class="box5-1 fl"></span><i class="box5-2 fl"></i><a href="#" class="fl clearfix">健康游戏公告</a><i class="box5-3 fl"></i><span class="box5-4 fl"></span></p>
+        <p class="box6">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活 </p>
+        <p class="box7">本游戏适合18周岁以上的未成年人用户,未满18周岁的未成年人用户请在家长的监督下进行游戏。</p>
+        <div class="box8"></div>
+         <div class="box9"><img src="../img/01-46.png" alt="" /></div>
+    </div>      
+   
+            
+           
+           
+           
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
